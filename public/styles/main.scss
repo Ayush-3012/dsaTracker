@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+}
+
+:root {
+  --color-primary: #5f1687;
+  --color-secondary: #1bd6bf;
+  --color-white: #fff;
+  --color-black: #000;
+  --color-no-0: #f8f8f8;
+  --color-no-1: #dbe1e8;
+  --color-no-2: #b2becd;
+  --color-no-3: #6c7983;
+  --color-no-4: #56648e;
+  --br-sm-2: 14px;
+  --box-shadow-1: 0 3px 15px rgba(0, 0, 0, 0.3);
+}
+
+body {
+  background-color: var(--color-primary);
+  // font-size: 1.1rem;
+  height: 100vh;
+  color: var(--color-white);
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  background-color: white;
+  .active-btn {
+    background-color: var(--color-secondary) !important;
+    transition: all 0.4s ease-in-out;
+    i {
+      color: var(--color-white) !important;
+    }
+  }
+  .control {
+    cursor: pointer;
+    background-color: var(--color-no-4);
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5rem 0;
+    box-shadow: var(--box-shadow-1);
+    i {
+      font-size: 1.5rem;
+      color: var(--color-white);
+      pointer-events: none;
+    }
+  }
+}
+
+.main {
+  background-color: yellow;
+  display: grid;
+  height: 100%;
+  padding: 2rem;
+  .main-Box {
+    background-color: brown;
+    // height: inherit;
+    .row {
+      height: 40%;
+      margin: 3% 2%;
+      background-color: burlywood;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      .item {
+        width: 30%;
+        height: 80%;
+        background-color: cyan;
+      }
+    }
+  }
+}
+
+.theme-btn {
+  position: fixed;
+  left: 94%;
+  top: 84%;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: var(--color-no-4);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.3);
+  transition: all 0.1s ease-in-out;
+  &:active {
+    transform: translateY(-5px);
+  }
+  i {
+    font-size: 2rem;
+    color: var(--color-white);
+    pointer-events: none;
+  }
+}
