@@ -20,9 +20,15 @@
 }
 
 body {
-  background-color: var(--color-primary);
+  background-color: peru;
   height: 100vh;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   color: var(--color-white);
+}
+
+/* REMOVES SCROLL, EVEN ITS FUNCTIONING */
+body {
+  overflow: hidden;
 }
 
 .nav {
@@ -40,49 +46,98 @@ body {
 }
 .nav .control {
   cursor: pointer;
+  transition: all 0.2s ease-in-out;
   background-color: var(--color-no-4);
-  height: 60px;
-  width: 60px;
+  height: 40px;
+  width: 40px;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0.5rem 0;
+  margin: 0.3rem 0;
   box-shadow: var(--box-shadow-1);
 }
 .nav .control i {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: var(--color-white);
   pointer-events: none;
 }
+.nav .control:hover {
+  transform: scale(1.05);
+  transition: all 0.2s ease-in-out;
+}
+
+/* SCROLLING EFFECT */
+.main-Box {
+  float: left;
+  overflow-y: auto;
+  height: 700px;
+}
 
 .main {
-  background-color: yellow;
-  display: grid;
-  height: 100%;
-  padding: 2rem;
+  padding: 0.5rem 2rem;
 }
 .main .main-Box {
-  background-color: brown;
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 0.5rem;
 }
-.main .main-Box .row {
+.main .main-Box .item {
+  background-color: #acd1e8;
+  border-radius: 20px;
+  transition: all 0.2s ease-in-out;
+  padding: 0.5rem;
+}
+.main .main-Box .item a {
+  text-decoration: none;
+}
+.main .main-Box .item .image img {
+  width: 100%;
+  border-radius: 20px;
+  border-bottom: 2px solid black;
+}
+.main .main-Box .item .name {
+  font-size: 1.5rem;
+  text-align: center;
+  background-color: palegoldenrod;
+  border-radius: 20px;
+  color: green;
   height: 40%;
-  margin: 3% 2%;
-  background-color: burlywood;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+  transition: all 0.4s ease-in-out;
 }
-.main .main-Box .row .item {
-  width: 30%;
-  height: 80%;
-  background-color: cyan;
+.main .main-Box .item .name h3 {
+  border-top: 2px solid black;
+  border-radius: 20px;
+}
+.main .main-Box .item .name p {
+  transform: scale(0);
+  transition: all 0.4s ease-in-out;
+}
+.main .item:hover {
+  transform: scale(1.02);
+  transition: all 0.4s ease-in-out;
+}
+.main .item:hover .image {
+  transform: scale(0);
+}
+.main .item:hover .name {
+  transform: translateY(-11.5rem);
+  position: absolute;
+  height: 90%;
+  width: 95%;
+}
+.main .item:hover .name h3 {
+  text-decoration: underline;
+}
+.main .item:hover .name p {
+  transform: scale(1);
 }
 
 .theme-btn {
   position: fixed;
   left: 94%;
-  top: 84%;
+  top: 90%;
   width: 70px;
   height: 70px;
   border-radius: 50%;
