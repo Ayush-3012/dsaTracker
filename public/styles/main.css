@@ -67,6 +67,51 @@ body {
   transition: all 0.2s ease-in-out;
 }
 
+.about-Body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  background-color: green;
+}
+.about-Body .about-Page {
+  background-color: yellowgreen;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about-Body .about-Page h1 {
+  text-align: center;
+  width: 100%;
+  border: 2px solid brown;
+  padding: 2rem;
+}
+.about-Body .about-Page .about {
+  width: 80%;
+  background-color: blueviolet;
+  padding: 1rem 3rem;
+  margin: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.about-Body .about-Page .about h2 {
+  text-align: center;
+  width: 100%;
+  font-size: 3rem;
+  margin: 1rem;
+  border-bottom: 2px solid;
+}
+.about-Body .about-Page .about h4 {
+  text-align: center;
+  width: 80%;
+  font-size: 2rem;
+  background-color: #1bd6bf;
+}
+
 /* SCROLLING EFFECT */
 .main-Box {
   float: left;
@@ -113,9 +158,10 @@ body {
 .main .main-Box .item .name p {
   transform: scale(0);
   transition: all 0.4s ease-in-out;
+  padding: 0.5rem;
 }
 .main .item:hover {
-  transform: scale(1.02);
+  transform: scale(1);
   transition: all 0.4s ease-in-out;
 }
 .main .item:hover .image {
@@ -123,9 +169,8 @@ body {
 }
 .main .item:hover .name {
   transform: translateY(-11.5rem);
-  position: absolute;
-  height: 90%;
-  width: 95%;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 .main .item:hover .name h3 {
   text-decoration: underline;
