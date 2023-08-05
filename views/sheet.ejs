@@ -6,7 +6,29 @@
   </div>
 
   <div class="body">
-    <h2><%=dataStructure.questions.length %></h2>
+    <table>
+      <thead>
+        <tr>
+          <th>id</th>
+          <th>Questions</th>
+          <th>Links</th>
+        </tr>
+      </thead>
+    </table>
+    <% dataStructure.questions.forEach((item, count=0) => {%>
+    <table>
+      <tbody>
+        <tr>
+          <td><h4><%= ++count %></h4></td>
+          <td><h4><%=item.Problem%></h4></td>
+          <td>
+            <a href="<%=item.URL%>" target="_blank"><%=item.Problem%> </a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <% }); %>
   </div>
 </div>
 

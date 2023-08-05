@@ -113,7 +113,8 @@ body {
 }
 
 /* SCROLLING EFFECT */
-.main-Box {
+.main-Box,
+.sheet-Body {
   float: left;
   overflow-y: auto;
   height: 700px;
@@ -151,11 +152,12 @@ body {
   height: 40%;
   transition: all 0.4s ease-in-out;
 }
-.main .main-Box .item .name h3 {
+.main .main-Box .item .name .itemName {
+  text-transform: capitalize;
   border-top: 2px solid black;
   border-radius: 20px;
 }
-.main .main-Box .item .name p {
+.main .main-Box .item .name .dsDef {
   transform: scale(0);
   transition: all 0.4s ease-in-out;
   padding: 0.5rem;
@@ -172,11 +174,29 @@ body {
   height: -moz-fit-content;
   height: fit-content;
 }
-.main .item:hover .name h3 {
+.main .item:hover .name .itemName {
   text-decoration: underline;
 }
-.main .item:hover .name p {
+.main .item:hover .name .dsDef {
   transform: scale(1);
+}
+
+table {
+  width: 80%;
+}
+table tr {
+  background-color: lightcyan;
+  color: darkcyan;
+  text-align: center;
+}
+table tr th {
+  border: 2px solid blue;
+  padding: 15px;
+  width: 25%;
+}
+table tr td {
+  padding: 15px;
+  width: 25%;
 }
 
 .theme-btn {

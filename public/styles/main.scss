@@ -86,13 +86,13 @@ body {
     flex-direction: column;
     align-items: center;
     // justify-content: center;
-    h1{
+    h1 {
       text-align: center;
       width: 100%;
       border: 2px solid brown;
       padding: 2rem;
     }
-    .about{
+    .about {
       width: 80%;
       background-color: blueviolet;
       padding: 1rem 3rem;
@@ -101,14 +101,14 @@ body {
       justify-content: center;
       flex-direction: column;
       align-items: center;
-      h2{
+      h2 {
         text-align: center;
         width: 100%;
         font-size: 3rem;
         margin: 1rem;
         border-bottom: 2px solid;
       }
-      h4{
+      h4 {
         text-align: center;
         width: 80%;
         font-size: 2rem;
@@ -119,7 +119,8 @@ body {
 }
 
 /* SCROLLING EFFECT */
-.main-Box {
+.main-Box,
+.sheet-Body {
   float: left;
   // width: 1000px;
   overflow-y: auto;
@@ -127,59 +128,42 @@ body {
 }
 
 .main {
-  // background-color: yellow;
-  // height: 90%;
   padding: 0.5rem 2rem;
   .main-Box {
-    // background-color: brown;
-    // height: inherit;
     display: grid;
     gap: 1.5rem;
     grid-template-columns: repeat(3, 1fr);
     padding: 0.5rem;
     .item {
       background-color: #acd1e8;
-      // display: flex;
-      // flex-direction: column;
       border-radius: 20px;
       transition: all 0.2s ease-in-out;
       padding: 0.5rem;
-      // width: 100%;
       a {
         text-decoration: none;
       }
       .image {
-        // flex: 60%;
-        // padding: 0.5rem;
-        // border: 2px solid red;
-        // border-radius: 20px;
-        // background-color: green;
-        // display: none;
-        // transition: all 0.4s ease-in-out;
         img {
           width: 100%;
-          // height: 100%;
-          // object-fit: cover;
           border-radius: 20px;
           border-bottom: 2px solid black;
         }
       }
       .name {
-        // flex: 40%;
         font-size: 1.5rem;
         text-align: center;
         background-color: palegoldenrod;
-        // width: 100%;
-        // border: 2px solid blue;
         border-radius: 20px;
         color: green;
+        // height: fit-content;
         height: 40%;
         transition: all 0.4s ease-in-out;
-        h3 {
+        .itemName {
+          text-transform: capitalize;
           border-top: 2px solid black;
           border-radius: 20px;
         }
-        p {
+        .dsDef {
           transform: scale(0);
           transition: all 0.4s ease-in-out;
           padding: 0.5rem;
@@ -196,16 +180,33 @@ body {
     .name {
       transform: translateY(-11.5rem);
       height: fit-content;
-      h3 {
+      .itemName {
         text-decoration: underline;
       }
-      p {
+      .dsDef {
         transform: scale(1);
       }
     }
   }
 }
 
+table {
+  width: 80%;
+  tr {
+    background-color: lightcyan;
+    color: darkcyan;
+    text-align: center;
+    th {
+      border: 2px solid blue;
+      padding: 15px;
+      width: 25%;
+    }
+    td {
+      padding: 15px;
+      width: 25%;
+    }
+  }
+} 
 .theme-btn {
   position: fixed;
   left: 94%;

@@ -2,17 +2,45 @@
 
 <div class="main">
   <div class="main-Box">
-    <div class="item array">
+    <% data.forEach(item => { %> <% let itemName = _.lowerCase(item.topicName)
+    %>
+    <div class="item">
+      <a href="/<%=itemName %>">
+        <div class="image">
+          <img src="/assets/images/<%= itemName%>.png" alt="<%=itemName%>" />
+        </div>
+        <div class="name">
+          <div class="dsName">
+            <h3 class="itemName"><%=itemName%></h3>
+          </div>
+          <div class="dsDef">
+            <p class="paraContent"><%=item.description%></p>
+          </div>
+        </div>
+      </a>
+    </div>
+    <% }); %>
+  </div>
+</div>
+
+<%- include("partials/footer.ejs"); %>
+
+<!--<div class="item">
       <a href="/array">
         <div class="image">
           <img src="/assets/images/array.png" alt="Array" />
         </div>
         <div class="name">
-          <h3>Array</h3>
-          <p>
-            An array is a collection of items of same data type stored at
-            contiguous memory locations.
-          </p>
+          <div class="dsName">
+            <h3>Array</h3>
+          </div>
+          <div class="dsDef">
+            <h6>Total Questions : 36</h6>
+            <p>
+              An array is a collection of items of same data type stored at
+              contiguous memory locations.
+            </p>
+          </div>
         </div>
       </a>
     </div>
@@ -182,8 +210,4 @@
           </p>
         </div>
       </a>
-    </div>
-  </div>
-</div>
-
-<%- include("partials/footer.ejs"); %>
+    </div> -->
