@@ -31,6 +31,7 @@ body {
   overflow: hidden;
 }
 
+/* REMOV SCROLL, BUT NOT ITS FUNCTIONING */
 .nav {
   display: flex;
   justify-content: center;
@@ -114,10 +115,28 @@ body {
 
 /* SCROLLING EFFECT */
 .main-Box,
-.sheet-Body {
-  float: left;
+.table-Body {
+  float: right;
   overflow-y: auto;
   height: 700px;
+}
+
+.main-Box::-webkit-scrollbar,
+.table-Body::-webkit-scrollbar {
+  width: 15px;
+}
+
+.main-Box::-webkit-scrollbar-track,
+.table-Body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #f5f5f5;
+  border-radius: 10px;
+}
+
+.main-Box::-webkit-scrollbar-thumb,
+.table-Body::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #f90;
 }
 
 .main {
@@ -132,11 +151,14 @@ body {
 .main .main-Box .item {
   background-color: #acd1e8;
   border-radius: 20px;
-  transition: all 0.2s ease-in-out;
   padding: 0.5rem;
 }
 .main .main-Box .item a {
   text-decoration: none;
+}
+.main .main-Box .item .image {
+  transform: scale(1);
+  transition: all 0.4s ease-in-out;
 }
 .main .main-Box .item .image img {
   width: 100%;
@@ -149,54 +171,141 @@ body {
   background-color: palegoldenrod;
   border-radius: 20px;
   color: green;
-  height: 40%;
   transition: all 0.4s ease-in-out;
 }
 .main .main-Box .item .name .itemName {
+  font-size: 2.5rem;
   text-transform: capitalize;
   border-top: 2px solid black;
   border-radius: 20px;
+}
+.main .main-Box .item .name .dsInfo {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 1rem;
+  align-items: flex-start;
+  transform: scale(1);
+  transition: all 0.4s ease-in-out;
 }
 .main .main-Box .item .name .dsDef {
   transform: scale(0);
   transition: all 0.4s ease-in-out;
   padding: 0.5rem;
+  min-height: 0;
+  max-height: 0;
 }
-.main .item:hover {
+.main .main-Box .item .name .dsDef .paraContent {
+  transition: all 0.4s ease-in-out;
+}
+.main .main-Box .item:hover {
   transform: scale(1);
   transition: all 0.4s ease-in-out;
 }
-.main .item:hover .image {
+.main .main-Box .item:hover .image {
   transform: scale(0);
 }
-.main .item:hover .name {
-  transform: translateY(-11.5rem);
-  height: -moz-fit-content;
-  height: fit-content;
+.main .main-Box .item:hover .name {
+  transform: translateY(-10.5rem);
 }
-.main .item:hover .name .itemName {
+.main .main-Box .item:hover .name .itemName {
   text-decoration: underline;
 }
-.main .item:hover .name .dsDef {
+.main .main-Box .item:hover .name .dsInfo {
+  transform: scale(0);
+}
+.main .main-Box .item:hover .name .dsDef {
   transform: scale(1);
+  min-height: 18vh;
+}
+.main .main-Box .item:hover .name .dsDef .paraContent {
+  transform: translateY(-7rem);
 }
 
-table {
-  width: 80%;
+.sheet-Main {
+  align-items: center;
+  justify-content: center;
+  display: flex;
 }
-table tr {
-  background-color: lightcyan;
-  color: darkcyan;
+.sheet-Main .sheet-Main-Box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sheet-Main .sheet-Main-Box .header {
+  width: 90%;
+  padding: 1rem 0;
+  background-color: lightblue;
   text-align: center;
 }
-table tr th {
-  border: 2px solid blue;
-  padding: 15px;
-  width: 25%;
+.sheet-Main .sheet-Main-Box .header a {
+  text-decoration: none;
 }
-table tr td {
-  padding: 15px;
-  width: 25%;
+.sheet-Main .sheet-Main-Box .body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sheet-Main .sheet-Main-Box .body .table-Body {
+  width: 85%;
+  height: 70vh;
+  padding: 0.5rem 0.2rem;
+}
+.sheet-Main .sheet-Main-Box .body .table-Body table {
+  table-layout: fixed;
+  width: 100%;
+  color: darkcyan;
+}
+.sheet-Main .sheet-Main-Box .body .table-Body table tr {
+  background-color: lightcyan;
+}
+.sheet-Main .sheet-Main-Box .body .table-Body table tr th.questions,
+.sheet-Main .sheet-Main-Box .body .table-Body table tr td.questions {
+  width: 82%;
+}
+.sheet-Main .sheet-Main-Box .body .table-Body table tr th.questions a,
+.sheet-Main .sheet-Main-Box .body .table-Body table tr td.questions a {
+  text-decoration: none;
+  color: inherit;
+}
+.sheet-Main .sheet-Main-Box .body .table-Body table tr th.questions a:hover,
+.sheet-Main .sheet-Main-Box .body .table-Body table tr td.questions a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.sheet-Main .sheet-Main-Box .body .table-Body table tr th.cb,
+.sheet-Main .sheet-Main-Box .body .table-Body table tr td.cb {
+  width: 3%;
+  text-align: center;
+}
+.sheet-Main .sheet-Main-Box .body .table-Body table tr th.cb input[type=checkbox],
+.sheet-Main .sheet-Main-Box .body .table-Body table tr td.cb input[type=checkbox] {
+  width: 15px;
+  height: 15px;
+}
+.sheet-Main .sheet-Main-Box .body .table-Body table tr th.id,
+.sheet-Main .sheet-Main-Box .body .table-Body table tr td.id {
+  width: 5%;
+  text-align: center;
+}
+.sheet-Main .sheet-Main-Box .body .table-Body table tr th {
+  height: 4rem;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: black;
+}
+.sheet-Main .sheet-Main-Box .body .table-Body table tr td {
+  padding: 10px;
+  font-size: 1.2rem;
+}
+.sheet-Main .sheet-Main-Box .body .table-Body table tr td.links {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.sheet-Main .sheet-Main-Box .body .table-Body table tr td.links img {
+  width: 30px;
+  height: 30px;
 }
 
 .theme-btn {

@@ -31,6 +31,8 @@ body {
 body {
   overflow: hidden;
 }
+
+/* REMOV SCROLL, BUT NOT ITS FUNCTIONING */
 // body::-webkit-scrollbar {
 //   display: none;
 // }
@@ -120,11 +122,27 @@ body {
 
 /* SCROLLING EFFECT */
 .main-Box,
-.sheet-Body {
-  float: left;
-  // width: 1000px;
+.table-Body {
+  float: right;
   overflow-y: auto;
   height: 700px;
+}
+.main-Box::-webkit-scrollbar,
+.table-Body::-webkit-scrollbar {
+  width: 15px;
+}
+
+.main-Box::-webkit-scrollbar-track,
+.table-Body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #f5f5f5;
+  border-radius: 10px;
+}
+
+.main-Box::-webkit-scrollbar-thumb,
+.table-Body::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #f90;
 }
 
 .main {
@@ -137,12 +155,15 @@ body {
     .item {
       background-color: #acd1e8;
       border-radius: 20px;
-      transition: all 0.2s ease-in-out;
+      // transition: all 0.2s ease-in-out;
       padding: 0.5rem;
       a {
         text-decoration: none;
       }
       .image {
+        transform: scale(1);
+        transition: all 0.4s ease-in-out;
+        // height: 55%;
         img {
           width: 100%;
           border-radius: 20px;
@@ -155,58 +176,150 @@ body {
         background-color: palegoldenrod;
         border-radius: 20px;
         color: green;
-        // height: fit-content;
-        height: 40%;
+        // height: 40%;
         transition: all 0.4s ease-in-out;
         .itemName {
+          font-size: 2.5rem;
           text-transform: capitalize;
           border-top: 2px solid black;
           border-radius: 20px;
+        }
+        .dsInfo {
+          display: flex;
+          flex-direction: column;
+          padding: 1rem;
+          gap: 1rem;
+          align-items: flex-start;
+          transform: scale(1);
+          transition: all 0.4s ease-in-out;
         }
         .dsDef {
           transform: scale(0);
           transition: all 0.4s ease-in-out;
           padding: 0.5rem;
+          min-height: 0;
+          max-height: 0;
+          .paraContent {
+            transition: all 0.4s ease-in-out;
+          }
         }
       }
-    }
-  }
-  .item:hover {
-    transform: scale(1);
-    transition: all 0.4s ease-in-out;
-    .image {
-      transform: scale(0);
-    }
-    .name {
-      transform: translateY(-11.5rem);
-      height: fit-content;
-      .itemName {
-        text-decoration: underline;
-      }
-      .dsDef {
+      &:hover {
         transform: scale(1);
+        transition: all 0.4s ease-in-out;
+
+        .image {
+          transform: scale(0);
+        }
+        .name {
+          // transition: all 0.4s ease-in-out;
+          transform: translateY(-10.5rem);
+          .itemName {
+            text-decoration: underline;
+          }
+          .dsInfo {
+            transform: scale(0);
+            // transition: all 0.4s ease-in-out;
+          }
+          .dsDef {
+            transform: scale(1);
+            min-height: 18vh;
+            // transition: all 0.4s ease-in-out;
+            .paraContent {
+              // transition: all 0.4s ease-in-out;
+              transform: translateY(-7rem);
+            }
+          }
+        }
       }
     }
   }
 }
 
-table {
-  width: 80%;
-  tr {
-    background-color: lightcyan;
-    color: darkcyan;
-    text-align: center;
-    th {
-      border: 2px solid blue;
-      padding: 15px;
-      width: 25%;
+.sheet-Main {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  .sheet-Main-Box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .header {
+      width: 90%;
+      padding: 1rem 0;
+      background-color: lightblue;
+      text-align: center;
+      a {
+        text-decoration: none;
+      }
     }
-    td {
-      padding: 15px;
-      width: 25%;
+    .body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .table-Body {
+        width: 85%;
+        height: 70vh;
+        padding: 0.5rem 0.2rem;
+        table {
+          table-layout: fixed;
+          width: 100%;
+          color: darkcyan;
+          tr {
+            background-color: lightcyan;
+            th.questions,
+            td.questions {
+              width: 82%;
+              a {
+                text-decoration: none;
+                color: inherit;
+                &:hover {
+                  text-decoration: underline;
+                  cursor: pointer;
+                }
+              }
+            }
+            th.cb,
+            td.cb {
+              width: 3%;
+              text-align: center;
+              input[type="checkbox"] {
+                width: 15px;
+                height: 15px;
+              }
+            }
+            th.id,
+            td.id {
+              width: 5%;
+              text-align: center;
+            }
+
+            th {
+              height: 4rem;
+              font-size: 1.5rem;
+              text-transform: uppercase;
+              color: black;
+            }
+            td {
+              padding: 10px;
+              font-size: 1.2rem;
+            }
+            td.links {
+              display: flex;
+              justify-content: space-evenly;
+              align-items: center;
+              img {
+                width: 30px;
+                height: 30px;
+              }
+            }
+          }
+        }
+      }
     }
   }
-} 
+}
+
 .theme-btn {
   position: fixed;
   left: 94%;

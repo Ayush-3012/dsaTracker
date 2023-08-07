@@ -1,34 +1,55 @@
 <%- include("partials/header.ejs") %>
 
-<div class="sheet-Body">
-  <div class="header">
-    <h2><%=dataStructure.topicName %></h2>
-  </div>
+<div class="sheet-Main">
+  <div class="sheet-Main-Box">
+    <div class="header">
+      <h1>DSA CRACKER</h1>
+      <h2><a href="/">Topics</a> / <%=dataStructure.topicName %></h2>
+    </div>
 
-  <div class="body">
-    <table>
-      <thead>
-        <tr>
-          <th>id</th>
-          <th>Questions</th>
-          <th>Links</th>
-        </tr>
-      </thead>
-    </table>
-    <% dataStructure.questions.forEach((item, count=0) => {%>
-    <table>
-      <tbody>
-        <tr>
-          <td><h4><%= ++count %></h4></td>
-          <td><h4><%=item.Problem%></h4></td>
-          <td>
-            <a href="<%=item.URL%>" target="_blank"><%=item.Problem%> </a>
-          </td>
-        </tr>
-      </tbody>
-    </table>
+    <div class="body">
+      <div class="table-Body">
+        <table>
+          <thead>
+            <!-- <tr> -->
+            <th class="cb"></th>
+            <th class="id">id</th>
+            <th class="questions">Questions</th>
+            <th class="links">Links</th>
+            <!-- </tr> -->
+          </thead>
+        </table>
+        <% dataStructure.questions.forEach((item, count=0) => {%>
+        <table>
+          <tbody>
+            <!-- <tr> -->
+            <td class="cb"><input type="checkbox" /></td>
+            <td class="id"><h4><%= ++count %></h4></td>
+            <td class="questions">
+              <h4>
+                <a href="<%=item.URL%>" target="_blank"><%=item.Problem%></a>
+              </h4>
+            </td>
+            <td class="links">
+              <% icon = item.URL.includes('geeksforgeeks') ?
+              '/assets/icons/geeksforgeeks.png' : '/assets/icons/leetcode.png'
+              %>
+              <a href="<%=item.URL%>" target="_blank"
+                ><img src="<%=icon%>" alt="icon"
+              /></a>
+              <% if(item.URL2 !== "") { %>
+              <a href="<%=item.URL2%>" target="_blank"
+                ><img src="/assets/icons/codingNinja.png" alt="icon"
+              /></a>
+              <% } %>
+            </td>
+            <!-- </tr> -->
+          </tbody>
+        </table>
 
-    <% }); %>
+        <% }); %>
+      </div>
+    </div>
   </div>
 </div>
 
