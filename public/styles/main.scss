@@ -125,7 +125,7 @@ body {
 .table-Body {
   float: right;
   overflow-y: auto;
-  height: 700px;
+  height: 650px;
 }
 .main-Box::-webkit-scrollbar,
 .table-Body::-webkit-scrollbar {
@@ -152,6 +152,7 @@ body {
     gap: 1.5rem;
     grid-template-columns: repeat(3, 1fr);
     padding: 0.5rem;
+    background-color: #04423b;
     .item {
       background-color: #acd1e8;
       border-radius: 20px;

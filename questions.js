@@ -861,7 +861,7 @@ export default [
       "Approx 43 different sorting algorithms. Quick sort, Merge Sort, Shell sort, Bubble Sort, Pigeonhole sort, Heap Sort, Count sort, Radix sort, and many more.",
     questions: [
       {
-        Topic: "Searching & Sorting",
+        Topic: "Search & Sort",
         Problem:
           "Find first and last positions of an element in a sorted array",
         Done: false,
@@ -871,7 +871,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/first-and-last-position-of-an-element-in-sorted-array_1082549?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "Searching & Sorting",
+        Topic: "Search & Sort",
         Problem: "Find a Fixed Point (Value equal to index) in a given array",
         Done: false,
         Bookmark: false,
@@ -880,7 +880,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/value-equal-to-the-index-value_1115771?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "Searching & Sorting",
+        Topic: "Search & Sort",
         Problem: "Search in a rotated sorted array",
         Done: false,
         Bookmark: false,
@@ -889,7 +889,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/search-in-rotated-sorted-array_1082554?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "Searching & Sorting",
+        Topic: "Search & Sort",
         Problem: "square root of an integer",
         Done: false,
         Bookmark: false,
@@ -898,7 +898,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/square-root-integral_893351?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "Searching & Sorting",
+        Topic: "Search & Sort",
         Problem:
           "Maximum and minimum of an array using minimum number of comparisons",
         Done: false,
@@ -908,7 +908,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/middle-of-three_1118283?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "Searching & Sorting",
+        Topic: "Search & Sort",
         Problem: "Optimum location of point to minimize total distance",
         Done: false,
         Bookmark: false,
@@ -917,7 +917,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/optimum-location_1116097?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "Searching & Sorting",
+        Topic: "Search & Sort",
         Problem: "Find the repeating and the missing",
         Done: false,
         Bookmark: false,
@@ -926,7 +926,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/find-the-repeating-and-missing-number_1062727?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "Searching & Sorting",
+        Topic: "Search & Sort",
         Problem: "find majority element",
         Done: false,
         Bookmark: false,
@@ -935,7 +935,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/majority-element_842495?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "Searching & Sorting",
+        Topic: "Search & Sort",
         Problem: "Searching in an array where adjacent differ by at most k",
         Done: false,
         Bookmark: false,
@@ -944,7 +944,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/find-student_3161883?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "Searching & Sorting",
+        Topic: "Search & Sort",
         Problem: "find a pair with a given difference",
         Done: false,
         Bookmark: false,
@@ -953,7 +953,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/pair-difference-k_1089634?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "Searching & Sorting",
+        Topic: "Search & Sort",
         Problem: "find four elements that sum to a given value",
         Done: false,
         Bookmark: false,
@@ -962,7 +962,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/find-four-elements-that-sums-to-a-given-value_983605?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "Searching & Sorting",
+        Topic: "Search & Sort",
         Problem: "maximum sum such that no 2 elements are adjacent",
         Done: false,
         Bookmark: false,
@@ -971,7 +971,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/is-it-a-tree_630511?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "Searching & Sorting",
+        Topic: "Search & Sort",
         Problem: "Count triplet with sum smaller than a given value",
         Done: false,
         Bookmark: false,
@@ -980,7 +980,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/3-sum-smaller_3161884?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "Searching & Sorting",
+        Topic: "Search & Sort",
         Problem: "merge 2 sorted arrays",
         Done: false,
         Bookmark: false,
@@ -989,7 +989,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/ninja-and-sorted-arrays_1214628?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "Searching & Sorting",
+        Topic: "Search & Sort",
         Problem: "print all subarrays with 0 sum",
         Done: false,
         Bookmark: false,
@@ -998,7 +998,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/subarrays-with-zero-sum_3161876?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "Searching & Sorting",
+        Topic: "Search & Sort",
         Problem: "Product array Puzzle",
         Done: false,
         Bookmark: false,
@@ -1007,7 +1007,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/product-of-array-except-self_630271?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "Searching & Sorting",
+        Topic: "Search & Sort",
         Problem: "Sort array according to count of set bits",
         Done: false,
         Bookmark: false,
@@ -1016,7 +1016,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/sort-an-array-according-to-the-count-of-set-bits_873142?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "Searching & Sorting",
+        Topic: "Search & Sort",
         Problem: "minimum no. of swaps required to sort the array",
         Done: false,
         Bookmark: false,
@@ -1025,7 +1025,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/minimum-swaps-to-sort-array_1806885?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "Searching & Sorting",
+        Topic: "Search & Sort",
         Problem: "Bishu and Soldiers",
         Done: false,
         Bookmark: false,
@@ -1034,7 +1034,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/search-in-the-array_1116099?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "Searching & Sorting",
+        Topic: "Search & Sort",
         Problem: "Rasta and Kheshtak",
         Done: false,
         Bookmark: false,
@@ -1043,7 +1043,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/ninja-and-his-sword_1164268?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "Searching & Sorting",
+        Topic: "Search & Sort",
         Problem: "Kth smallest number again",
         Done: false,
         Bookmark: false,
@@ -1052,7 +1052,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/kth-smallest-integer-in-ranges_1115609?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "Searching & Sorting",
+        Topic: "Search & Sort",
         Problem: "Find pivot element in a sorted array",
         Done: false,
         Bookmark: false,
@@ -1061,7 +1061,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/game-of-largest-element_1170064?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "Searching & Sorting",
+        Topic: "Search & Sort",
         Problem: "K-th Element of Two Sorted Arrays",
         Done: false,
         Bookmark: false,
@@ -1070,7 +1070,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/k-th-element-of-2-sorted-array_1164159?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "Searching & Sorting",
+        Topic: "Search & Sort",
         Problem: "Aggressive cows",
         Done: false,
         Bookmark: false,
@@ -1079,7 +1079,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/chess-tournament_981299?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "Searching & Sorting",
+        Topic: "Search & Sort",
         Problem: "Book Allocation Problem",
         Done: false,
         Bookmark: false,
@@ -1088,7 +1088,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/ayush-gives-ninjatest_1097574?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "Searching & Sorting",
+        Topic: "Search & Sort",
         Problem: "EKOSPOJ:",
         Done: false,
         Bookmark: false,
@@ -1097,7 +1097,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/kevin-and-his-fruits_1164267?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "Searching & Sorting",
+        Topic: "Search & Sort",
         Problem: "Job Scheduling Algo",
         Done: false,
         Bookmark: false,
@@ -1106,7 +1106,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/weighted-job-scheduling_1094885?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "Searching & Sorting",
+        Topic: "Search & Sort",
         Problem: "Missing Number in AP",
         Done: false,
         Bookmark: false,
@@ -1115,7 +1115,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/missing-number-in-ap_975498?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "Searching & Sorting",
+        Topic: "Search & Sort",
         Problem: "Smallest number with atleastn trailing zeroes infactorial",
         Done: false,
         Bookmark: false,
@@ -1124,7 +1124,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/smallest-number-with-at-least-n-trailing-zeros-in-factorial_1115774?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "Searching & Sorting",
+        Topic: "Search & Sort",
         Problem: "Painters Partition Problem:",
         Done: false,
         Bookmark: false,
@@ -1133,7 +1133,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/painter-s-partition-problem_1089557?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "Searching & Sorting",
+        Topic: "Search & Sort",
         Problem: "ROTI-Prata SPOJ",
         Done: false,
         Bookmark: false,
@@ -1142,7 +1142,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/cooking-ninjas_1164174?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "Searching & Sorting",
+        Topic: "Search & Sort",
         Problem: "DoubleHelix SPOJ",
         Done: false,
         Bookmark: false,
@@ -1151,7 +1151,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/maximize-the-sum_1118624?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "Searching & Sorting",
+        Topic: "Search & Sort",
         Problem: "Subset Sums",
         Done: false,
         Bookmark: false,
@@ -1160,7 +1160,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/city-of-happy-people_1199336?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "Searching & Sorting",
+        Topic: "Search & Sort",
         Problem: "Find the inversion count",
         Done: false,
         Bookmark: false,
@@ -1169,7 +1169,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/equal-global-and-local-inversions_1463976?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "Searching & Sorting",
+        Topic: "Search & Sort",
         Problem: "Implement Merge-sort in-place",
         Done: false,
         Bookmark: false,
@@ -1178,7 +1178,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/merge-sort-in-place_1118623?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "Searching & Sorting",
+        Topic: "Search & Sort",
         Problem: "Partitioning and Sorting Arrays with Many Repeated Entries",
         Done: false,
         Bookmark: false,
@@ -1197,7 +1197,7 @@ export default [
       "A linked list consists of nodes where each node contains a data field and a reference(link) to the next node in the list.",
     questions: [
       {
-        Topic: "LinkedList",
+        Topic: "Linked List",
         Problem:
           "Write a Program to reverse the Linked List. (Both Iterative and recursive)",
         Done: false,
@@ -1207,7 +1207,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/reverse-the-singly-linked-list_799897?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "LinkedList",
+        Topic: "Linked List",
         Problem: "Reverse a Linked List in group of Given Size. [Very Imp]",
         Done: false,
         Bookmark: false,
@@ -1216,7 +1216,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/reverse-a-ll_2271431?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "LinkedList",
+        Topic: "Linked List",
         Problem: "Write a program to Detect loop in a linked list.",
         Done: false,
         Bookmark: false,
@@ -1225,7 +1225,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/detect-the-cycle_1822910?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "LinkedList",
+        Topic: "Linked List",
         Problem: "Write a program to Delete loop in a linked list.",
         Done: false,
         Bookmark: false,
@@ -1234,7 +1234,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/detect-and-remove-cycle_920523?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "LinkedList",
+        Topic: "Linked List",
         Problem: "Find the starting point of the loop. ",
         Done: false,
         Bookmark: false,
@@ -1243,7 +1243,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/detect-the-first-node-of-the-loop_1112628?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "LinkedList",
+        Topic: "Linked List",
         Problem: "Remove Duplicates in a sorted Linked List.",
         Done: false,
         Bookmark: false,
@@ -1252,7 +1252,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/unique-sorted-list_2420283?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "LinkedList",
+        Topic: "Linked List",
         Problem: "Remove Duplicates in a Un-sorted Linked List.",
         Done: false,
         Bookmark: false,
@@ -1261,7 +1261,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/remove-duplicates-from-unsorted-linked-list_1069331?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "LinkedList",
+        Topic: "Linked List",
         Problem:
           "Write a Program to Move the last element to Front in a Linked List.",
         Done: false,
@@ -1271,7 +1271,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/deleting-and-adding-the-last-node_1170051?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "LinkedList",
+        Topic: "Linked List",
         Problem: "Add “1” to a number represented as a Linked List.",
         Done: false,
         Bookmark: false,
@@ -1280,7 +1280,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/add-one-to-linked-list_920456?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "LinkedList",
+        Topic: "Linked List",
         Problem: "Add two numbers represented by linked lists.",
         Done: false,
         Bookmark: false,
@@ -1289,7 +1289,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/add-two-numbers-as-linked-lists_1170520?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "LinkedList",
+        Topic: "Linked List",
         Problem: "Intersection of two Sorted Linked List.",
         Done: false,
         Bookmark: false,
@@ -1298,7 +1298,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/intersection-of-linked-lists_3210610?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "LinkedList",
+        Topic: "Linked List",
         Problem: "Intersection Point of two Linked Lists.",
         Done: false,
         Bookmark: false,
@@ -1307,7 +1307,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/intersection-of-linked-list_630457?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "LinkedList",
+        Topic: "Linked List",
         Problem: "Merge Sort For Linked lists.[Very Important]",
         Done: false,
         Bookmark: false,
@@ -1316,7 +1316,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/mergesort-linked-list_630514?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "LinkedList",
+        Topic: "Linked List",
         Problem: "Quicksort for Linked Lists.[Very Important]",
         Done: false,
         Bookmark: false,
@@ -1325,7 +1325,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/quick-sort-on-linked-list_893099?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "LinkedList",
+        Topic: "Linked List",
         Problem: "Find the middle Element of a linked list.",
         Done: false,
         Bookmark: false,
@@ -1334,7 +1334,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/middle-of-linked-list_973250?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "LinkedList",
+        Topic: "Linked List",
         Problem: "Check if a linked list is a circular linked list.",
         Done: false,
         Bookmark: false,
@@ -1343,7 +1343,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/is-it-a-circular-linked-list_981265?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "LinkedList",
+        Topic: "Linked List",
         Problem: "Split a Circular linked list into two halves.",
         Done: false,
         Bookmark: false,
@@ -1352,7 +1352,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/split-a-circular-linked-list_1071003?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "LinkedList",
+        Topic: "Linked List",
         Problem:
           "Write a Program to check whether the Singly Linked list is a palindrome or not.",
         Done: false,
@@ -1362,7 +1362,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/palindrom-linked-list_799352?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "LinkedList",
+        Topic: "Linked List",
         Problem: "Deletion from a Circular Linked List.",
         Done: false,
         Bookmark: false,
@@ -1371,7 +1371,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/deletion-in-circular-linked-list_630409?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "LinkedList",
+        Topic: "Linked List",
         Problem: "Reverse a Doubly Linked list.",
         Done: false,
         Bookmark: false,
@@ -1380,7 +1380,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/reverse-a-doubly-linked-list_1116098?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "LinkedList",
+        Topic: "Linked List",
         Problem: "Find pairs with a given sum in a DLL.",
         Done: false,
         Bookmark: false,
@@ -1389,7 +1389,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/find-pair-with-a-given-sum-in-a-doubly-linked-list_1164172?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "LinkedList",
+        Topic: "Linked List",
         Problem:
           "Count triplets in a sorted DLL whose sum is equal to given value “X”.",
         Done: false,
@@ -1399,7 +1399,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/count-triplets_873377?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "LinkedList",
+        Topic: "Linked List",
         Problem: "Sort a “k”sorted Doubly Linked list.[Very IMP]",
         Done: false,
         Bookmark: false,
@@ -1408,7 +1408,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/sort-a-k-sorted-doubly-linked-list_1118118?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "LinkedList",
+        Topic: "Linked List",
         Problem: "Rotate DoublyLinked list by N nodes.",
         Done: false,
         Bookmark: false,
@@ -1417,7 +1417,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/rotate-dll_1115782?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "LinkedList",
+        Topic: "Linked List",
         Problem:
           "Rotate a Doubly Linked list in group of Given Size.[Very IMP]",
         Done: false,
@@ -1427,7 +1427,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/reverse-dll-nodes-in-groups_920399?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "LinkedList",
+        Topic: "Linked List",
         Problem: "Can we reverse a linked list in less than O(n) ?",
         Done: false,
         Bookmark: false,
@@ -1436,9 +1436,9 @@ export default [
         URL2: "",
       },
       {
-        Topic: "LinkedList",
+        Topic: "Linked List",
         Problem:
-          "Why Quicksort is preferred for. Arrays and Merge Sort for LinkedLists ?",
+          "Why Quicksort is preferred for. Arrays and Merge Sort for Linked Lists ?",
         Done: false,
         Bookmark: false,
         Notes: "",
@@ -1446,7 +1446,7 @@ export default [
         URL2: "",
       },
       {
-        Topic: "LinkedList",
+        Topic: "Linked List",
         Problem: "Flatten a Linked List",
         Done: false,
         Bookmark: false,
@@ -1455,7 +1455,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/flatten-a-linked-list_1112655?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "LinkedList",
+        Topic: "Linked List",
         Problem: "Sort a LL of 0's, 1's and 2's",
         Done: false,
         Bookmark: false,
@@ -1464,7 +1464,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/sort-linked-list-of-0s-1s-2s_1071937?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "LinkedList",
+        Topic: "Linked List",
         Problem: "Clone a linked list with next and random pointer",
         Done: false,
         Bookmark: false,
@@ -1473,7 +1473,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/clone-linked-list-with-random-pointer_873376?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "LinkedList",
+        Topic: "Linked List",
         Problem: "Merge K sorted Linked list",
         Done: false,
         Bookmark: false,
@@ -1482,7 +1482,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/merge-k-sorted-lists_992772?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "LinkedList",
+        Topic: "Linked List",
         Problem: "Multiply 2 no. represented by LL",
         Done: false,
         Bookmark: false,
@@ -1491,7 +1491,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/multiply-linked-lists_983603?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "LinkedList",
+        Topic: "Linked List",
         Problem: "Delete nodes which have a greater value on right side",
         Done: false,
         Bookmark: false,
@@ -1500,7 +1500,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/delete-nodes-which-have-a-greater-value-on-right-side_1115785?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "LinkedList",
+        Topic: "Linked List",
         Problem: "Segregate even and odd nodes in a Linked List",
         Done: false,
         Bookmark: false,
@@ -1509,7 +1509,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/segregate-even-and-odd-nodes-in-a-linked-list_1116100?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "LinkedList",
+        Topic: "Linked List",
         Problem: "Program for n’th node from the end of a Linked List",
         Done: false,
         Bookmark: false,
@@ -1518,7 +1518,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/k-th-node-from-the-end-of-the-linked-list_1171164?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "LinkedList",
+        Topic: "Linked List",
         Problem:
           "Find the first non-repeating character from a stream of characters",
         Done: false,
@@ -1861,213 +1861,215 @@ export default [
       },
     ],
   },
-  // 	{
-  // 		topicName: 'BST',
-  // 		position: 6,
-  // 		started: false,
-  // 		doneQuestions: 0,
-  // description:
-  // 		questions: [
-  // 			{
-  // 				"Topic": "Binary Search Trees",
-  // 				"Problem": "Find a value in a BST",
-  // 				"Done": false,
-  // 				"Bookmark": false,
-  // 				"Notes": "",
-  // 				"URL": "https://practice.geeksforgeeks.org/problems/search-a-node-in-bst/1/",
-  // 				"URL2": "https://www.codingninjas.com/codestudio/problems/find-a-value-in-bst_1170063?topList=love-babbar-dsa-sheet-problems"
-  // 			},
-  // 			{
-  // 				"Topic": "Binary Search Trees",
-  // 				"Problem": "Deletion of a node in a BST",
-  // 				"Done": false,
-  // 				"Bookmark": false,
-  // 				"Notes": "",
-  // 				"URL": "https://leetcode.com/problems/delete-node-in-a-bst/",
-  // 				"URL2": "https://www.codingninjas.com/codestudio/problems/delete-node-in-bst_920381?topList=love-babbar-dsa-sheet-problems"
-  // 			},
-  // 			{
-  // 				"Topic": "Binary Search Trees",
-  // 				"Problem": "Find min and max value in a BST",
-  // 				"Done": false,
-  // 				"Bookmark": false,
-  // 				"Notes": "",
-  // 				"URL": "https://practice.geeksforgeeks.org/problems/minimum-element-in-bst/1",
-  // 				"URL2": "https://www.codingninjas.com/codestudio/problems/guess-price_3211264?topList=love-babbar-dsa-sheet-problems"
-  // 			},
-  // 			{
-  // 				"Topic": "Binary Search Trees",
-  // 				"Problem": "Find inorder successor and inorder predecessor in a BST",
-  // 				"Done": false,
-  // 				"Bookmark": false,
-  // 				"Notes": "",
-  // 				"URL": "https://practice.geeksforgeeks.org/problems/predecessor-and-successor/1",
-  // 				"URL2": "https://www.codingninjas.com/codestudio/problems/_893049?topList=love-babbar-dsa-sheet-problems"
-  // 			},
-  // 			{
-  // 				"Topic": "Binary Search Trees",
-  // 				"Problem": "Check if a tree is a BST or not ",
-  // 				"Done": false,
-  // 				"Bookmark": false,
-  // 				"Notes": "",
-  // 				"URL": "https://practice.geeksforgeeks.org/problems/check-for-bst/1",
-  // 				"URL2": "https://www.codingninjas.com/codestudio/problems/validate-bst_799483?topList=love-babbar-dsa-sheet-problems"
-  // 			},
-  // 			{
-  // 				"Topic": "Binary Search Trees",
-  // 				"Problem": "Populate Inorder successor of all nodes",
-  // 				"Done": false,
-  // 				"Bookmark": false,
-  // 				"Notes": "",
-  // 				"URL": "https://practice.geeksforgeeks.org/problems/populate-inorder-successor-for-all-nodes/1",
-  // 				"URL2": "https://www.codingninjas.com/codestudio/problems/populate-inorder-successor-of-all-nodes-of-a-binary-tree_1118625?topList=love-babbar-dsa-sheet-problems"
-  // 			},
-  // 			{
-  // 				"Topic": "Binary Search Trees",
-  // 				"Problem": "Find LCA  of 2 nodes in a BST",
-  // 				"Done": false,
-  // 				"Bookmark": false,
-  // 				"Notes": "",
-  // 				"URL": "https://practice.geeksforgeeks.org/problems/lowest-common-ancestor-in-a-bst/1",
-  // 				"URL2": "https://www.codingninjas.com/codestudio/problems/lca-in-a-bst_981280?topList=love-babbar-dsa-sheet-problems"
-  // 			},
-  // 			{
-  // 				"Topic": "Binary Search Trees",
-  // 				"Problem": "Construct BST from preorder traversal",
-  // 				"Done": false,
-  // 				"Bookmark": false,
-  // 				"Notes": "",
-  // 				"URL": "https://leetcode.com/problems/construct-binary-search-tree-from-preorder-traversal/",
-  // 				"URL2": "https://www.codingninjas.com/codestudio/problems/bst-from-preorder_2689307?topList=love-babbar-dsa-sheet-problems"
-  // 			},
-  // 			{
-  // 				"Topic": "Binary Search Trees",
-  // 				"Problem": "Convert Binary tree into BST",
-  // 				"Done": false,
-  // 				"Bookmark": false,
-  // 				"Notes": "",
-  // 				"URL": "https://practice.geeksforgeeks.org/problems/binary-tree-to-bst/1",
-  // 				"URL2": "https://www.codingninjas.com/codestudio/problems/binary-tree-to-bst_893074?topList=love-babbar-dsa-sheet-problems"
-  // 			},
-  // 			{
-  // 				"Topic": "Binary Search Trees",
-  // 				"Problem": "Convert a normal BST into a Balanced BST",
-  // 				"Done": false,
-  // 				"Bookmark": false,
-  // 				"Notes": "",
-  // 				"URL": "https://www.geeksforgeeks.org/convert-normal-bst-balanced-bst/",
-  // 				"URL2": "https://www.codingninjas.com/codestudio/problems/normal-bst-to-balanced-bst_920472?topList=love-babbar-dsa-sheet-problems"
-  // 			},
-  // 			{
-  // 				"Topic": "Binary Search Trees",
-  // 				"Problem": "Merge two BST [ V.V.V>IMP ]",
-  // 				"Done": false,
-  // 				"Bookmark": false,
-  // 				"Notes": "",
-  // 				"URL": "https://www.geeksforgeeks.org/merge-two-balanced-binary-search-trees/",
-  // 				"URL2": "https://www.codingninjas.com/codestudio/problems/h_920474?topList=love-babbar-dsa-sheet-problems"
-  // 			},
-  // 			{
-  // 				"Topic": "Binary Search Trees",
-  // 				"Problem": "Find Kth largest element in a BST",
-  // 				"Done": false,
-  // 				"Bookmark": false,
-  // 				"Notes": "",
-  // 				"URL": "https://practice.geeksforgeeks.org/problems/kth-largest-element-in-bst/1",
-  // 				"URL2": "https://www.codingninjas.com/codestudio/problems/k-th-largest-number_920438?topList=love-babbar-dsa-sheet-problems"
-  // 			},
-  // 			{
-  // 				"Topic": "Binary Search Trees",
-  // 				"Problem": "Find Kth smallest element in a BST",
-  // 				"Done": false,
-  // 				"Bookmark": false,
-  // 				"Notes": "",
-  // 				"URL": "https://practice.geeksforgeeks.org/problems/find-k-th-smallest-element-in-bst/1",
-  // 				"URL2": "https://www.codingninjas.com/codestudio/problems/kth-smallest-node-in-bst_920441?topList=love-babbar-dsa-sheet-problems"
-  // 			},
-  // 			{
-  // 				"Topic": "Binary Search Trees",
-  // 				"Problem": "Count pairs from 2 BST whose sum is equal to given value \"X\"",
-  // 				"Done": false,
-  // 				"Bookmark": false,
-  // 				"Notes": "",
-  // 				"URL": "https://practice.geeksforgeeks.org/problems/brothers-from-different-root/1",
-  // 				"URL2": "https://www.codingninjas.com/codestudio/problems/count-couples_3208653?topList=love-babbar-dsa-sheet-problems"
-  // 			},
-  // 			{
-  // 				"Topic": "Binary Search Trees",
-  // 				"Problem": "Find the median of BST in O(n) time and O(1) space",
-  // 				"Done": false,
-  // 				"Bookmark": false,
-  // 				"Notes": "",
-  // 				"URL": "https://www.geeksforgeeks.org/find-median-bst-time-o1-space/",
-  // 				"URL2": "https://www.codingninjas.com/codestudio/problems/median-of-a-bst_893184?topList=love-babbar-dsa-sheet-problems"
-  // 			},
-  // 			{
-  // 				"Topic": "Binary Search Trees",
-  // 				"Problem": "Count BST nodes that lie in a given range",
-  // 				"Done": false,
-  // 				"Bookmark": false,
-  // 				"Notes": "",
-  // 				"URL": "https://practice.geeksforgeeks.org/problems/count-bst-nodes-that-lie-in-a-given-range/1",
-  // 				"URL2": "https://www.codingninjas.com/codestudio/problems/bst-queries_1095658?topList=love-babbar-dsa-sheet-problems"
-  // 			},
-  // 			{
-  // 				"Topic": "Binary Search Trees",
-  // 				"Problem": "Replace every element with the least greater element on its right",
-  // 				"Done": false,
-  // 				"Bookmark": false,
-  // 				"Notes": "",
-  // 				"URL": "https://www.geeksforgeeks.org/replace-every-element-with-the-least-greater-element-on-its-right/",
-  // 				"URL2": "https://www.codingninjas.com/codestudio/problems/least-greater-element_1164266?topList=love-babbar-dsa-sheet-problems"
-  // 			},
-  // 			{
-  // 				"Topic": "Binary Search Trees",
-  // 				"Problem": "Given \"n\" appointments, find the conflicting appointments",
-  // 				"Done": false,
-  // 				"Bookmark": false,
-  // 				"Notes": "",
-  // 				"URL": "https://www.geeksforgeeks.org/given-n-appointments-find-conflicting-appointments/",
-  // 				"URL2": "https://www.codingninjas.com/codestudio/problems/find-conflicting-meetings_1170047?topList=love-babbar-dsa-sheet-problems"
-  // 			},
-  // 			{
-  // 				"Topic": "Binary Search Trees",
-  // 				"Problem": "Check preorder is valid or not",
-  // 				"Done": false,
-  // 				"Bookmark": false,
-  // 				"Notes": "",
-  // 				"URL": "https://practice.geeksforgeeks.org/problems/preorder-to-postorder/0",
-  // 				"URL2": "https://www.codingninjas.com/codestudio/problems/check-if-preorder-traversal-is-valid_1164410?topList=love-babbar-dsa-sheet-problems"
-  // 			},
-  // 			{
-  // 				"Topic": "Binary Search Trees",
-  // 				"Problem": "Check whether BST contains Dead end",
-  // 				"Done": false,
-  // 				"Bookmark": false,
-  // 				"Notes": "",
-  // 				"URL": "https://practice.geeksforgeeks.org/problems/check-whether-bst-contains-dead-end/1",
-  // 				"URL2": "https://www.codingninjas.com/codestudio/problems/check-for-dead-end-in-a-bst_1169457?topList=love-babbar-dsa-sheet-problems"
-  // 			},
-  // 			{
-  // 				"Topic": "Binary Search Trees",
-  // 				"Problem": "Largest BST in a Binary Tree [ V.V.V.V.V IMP ]",
-  // 				"Done": false,
-  // 				"Bookmark": false,
-  // 				"Notes": "",
-  // 				"URL": "https://practice.geeksforgeeks.org/problems/largest-bst/1",
-  // 				"URL2": "https://www.codingninjas.com/codestudio/problems/largest-bst-subtree_893103?topList=love-babbar-dsa-sheet-problems"
-  // 			},
-  // 			{
-  // 				"Topic": "Binary Search Trees",
-  // 				"Problem": "Flatten BST to sorted list",
-  // 				"Done": false,
-  // 				"Bookmark": false,
-  // 				"Notes": "",
-  // 				"URL": "https://www.geeksforgeeks.org/flatten-bst-to-sorted-list-increasing-order/",
-  // 				"URL2": "https://www.codingninjas.com/codestudio/problems/flatten-bst-to-a-sorted-list_1169459?topList=love-babbar-dsa-sheet-problems"
-  // 			}
-  // 		],
-  // 	},
+  {
+    topicName: "BST",
+    position: 6,
+    started: false,
+    doneQuestions: 0,
+    description:
+      "In computer science, a binary search tree (BST), also called an ordered or sorted binary tree, is a rooted binary tree data structure with the key of each internal node being greater than all the keys in the respective node's left subtree and less than the ones in its right subtree.",
+    questions: [
+      {
+        Topic: "BST",
+        Problem: "Find a value in a BST",
+        Done: false,
+        Bookmark: false,
+        Notes: "",
+        URL: "https://practice.geeksforgeeks.org/problems/search-a-node-in-bst/1/",
+        URL2: "https://www.codingninjas.com/codestudio/problems/find-a-value-in-bst_1170063?topList=love-babbar-dsa-sheet-problems",
+      },
+      {
+        Topic: "BST",
+        Problem: "Deletion of a node in a BST",
+        Done: false,
+        Bookmark: false,
+        Notes: "",
+        URL: "https://leetcode.com/problems/delete-node-in-a-bst/",
+        URL2: "https://www.codingninjas.com/codestudio/problems/delete-node-in-bst_920381?topList=love-babbar-dsa-sheet-problems",
+      },
+      {
+        Topic: "BST",
+        Problem: "Find min and max value in a BST",
+        Done: false,
+        Bookmark: false,
+        Notes: "",
+        URL: "https://practice.geeksforgeeks.org/problems/minimum-element-in-bst/1",
+        URL2: "https://www.codingninjas.com/codestudio/problems/guess-price_3211264?topList=love-babbar-dsa-sheet-problems",
+      },
+      {
+        Topic: "BST",
+        Problem: "Find inorder successor and inorder predecessor in a BST",
+        Done: false,
+        Bookmark: false,
+        Notes: "",
+        URL: "https://practice.geeksforgeeks.org/problems/predecessor-and-successor/1",
+        URL2: "https://www.codingninjas.com/codestudio/problems/_893049?topList=love-babbar-dsa-sheet-problems",
+      },
+      {
+        Topic: "BST",
+        Problem: "Check if a tree is a BST or not ",
+        Done: false,
+        Bookmark: false,
+        Notes: "",
+        URL: "https://practice.geeksforgeeks.org/problems/check-for-bst/1",
+        URL2: "https://www.codingninjas.com/codestudio/problems/validate-bst_799483?topList=love-babbar-dsa-sheet-problems",
+      },
+      {
+        Topic: "BST",
+        Problem: "Populate Inorder successor of all nodes",
+        Done: false,
+        Bookmark: false,
+        Notes: "",
+        URL: "https://practice.geeksforgeeks.org/problems/populate-inorder-successor-for-all-nodes/1",
+        URL2: "https://www.codingninjas.com/codestudio/problems/populate-inorder-successor-of-all-nodes-of-a-binary-tree_1118625?topList=love-babbar-dsa-sheet-problems",
+      },
+      {
+        Topic: "BST",
+        Problem: "Find LCA  of 2 nodes in a BST",
+        Done: false,
+        Bookmark: false,
+        Notes: "",
+        URL: "https://practice.geeksforgeeks.org/problems/lowest-common-ancestor-in-a-bst/1",
+        URL2: "https://www.codingninjas.com/codestudio/problems/lca-in-a-bst_981280?topList=love-babbar-dsa-sheet-problems",
+      },
+      {
+        Topic: "BST",
+        Problem: "Construct BST from preorder traversal",
+        Done: false,
+        Bookmark: false,
+        Notes: "",
+        URL: "https://leetcode.com/problems/construct-binary-search-tree-from-preorder-traversal/",
+        URL2: "https://www.codingninjas.com/codestudio/problems/bst-from-preorder_2689307?topList=love-babbar-dsa-sheet-problems",
+      },
+      {
+        Topic: "BST",
+        Problem: "Convert Binary tree into BST",
+        Done: false,
+        Bookmark: false,
+        Notes: "",
+        URL: "https://practice.geeksforgeeks.org/problems/binary-tree-to-bst/1",
+        URL2: "https://www.codingninjas.com/codestudio/problems/binary-tree-to-bst_893074?topList=love-babbar-dsa-sheet-problems",
+      },
+      {
+        Topic: "BST",
+        Problem: "Convert a normal BST into a Balanced BST",
+        Done: false,
+        Bookmark: false,
+        Notes: "",
+        URL: "https://www.geeksforgeeks.org/convert-normal-bst-balanced-bst/",
+        URL2: "https://www.codingninjas.com/codestudio/problems/normal-bst-to-balanced-bst_920472?topList=love-babbar-dsa-sheet-problems",
+      },
+      {
+        Topic: "BST",
+        Problem: "Merge two BST [ V.V.V>IMP ]",
+        Done: false,
+        Bookmark: false,
+        Notes: "",
+        URL: "https://www.geeksforgeeks.org/merge-two-balanced-binary-search-trees/",
+        URL2: "https://www.codingninjas.com/codestudio/problems/h_920474?topList=love-babbar-dsa-sheet-problems",
+      },
+      {
+        Topic: "BST",
+        Problem: "Find Kth largest element in a BST",
+        Done: false,
+        Bookmark: false,
+        Notes: "",
+        URL: "https://practice.geeksforgeeks.org/problems/kth-largest-element-in-bst/1",
+        URL2: "https://www.codingninjas.com/codestudio/problems/k-th-largest-number_920438?topList=love-babbar-dsa-sheet-problems",
+      },
+      {
+        Topic: "BST",
+        Problem: "Find Kth smallest element in a BST",
+        Done: false,
+        Bookmark: false,
+        Notes: "",
+        URL: "https://practice.geeksforgeeks.org/problems/find-k-th-smallest-element-in-bst/1",
+        URL2: "https://www.codingninjas.com/codestudio/problems/kth-smallest-node-in-bst_920441?topList=love-babbar-dsa-sheet-problems",
+      },
+      {
+        Topic: "BST",
+        Problem: 'Count pairs from 2 BST whose sum is equal to given value "X"',
+        Done: false,
+        Bookmark: false,
+        Notes: "",
+        URL: "https://practice.geeksforgeeks.org/problems/brothers-from-different-root/1",
+        URL2: "https://www.codingninjas.com/codestudio/problems/count-couples_3208653?topList=love-babbar-dsa-sheet-problems",
+      },
+      {
+        Topic: "BST",
+        Problem: "Find the median of BST in O(n) time and O(1) space",
+        Done: false,
+        Bookmark: false,
+        Notes: "",
+        URL: "https://www.geeksforgeeks.org/find-median-bst-time-o1-space/",
+        URL2: "https://www.codingninjas.com/codestudio/problems/median-of-a-bst_893184?topList=love-babbar-dsa-sheet-problems",
+      },
+      {
+        Topic: "BST",
+        Problem: "Count BST nodes that lie in a given range",
+        Done: false,
+        Bookmark: false,
+        Notes: "",
+        URL: "https://practice.geeksforgeeks.org/problems/count-bst-nodes-that-lie-in-a-given-range/1",
+        URL2: "https://www.codingninjas.com/codestudio/problems/bst-queries_1095658?topList=love-babbar-dsa-sheet-problems",
+      },
+      {
+        Topic: "BST",
+        Problem:
+          "Replace every element with the least greater element on its right",
+        Done: false,
+        Bookmark: false,
+        Notes: "",
+        URL: "https://www.geeksforgeeks.org/replace-every-element-with-the-least-greater-element-on-its-right/",
+        URL2: "https://www.codingninjas.com/codestudio/problems/least-greater-element_1164266?topList=love-babbar-dsa-sheet-problems",
+      },
+      {
+        Topic: "BST",
+        Problem: 'Given "n" appointments, find the conflicting appointments',
+        Done: false,
+        Bookmark: false,
+        Notes: "",
+        URL: "https://www.geeksforgeeks.org/given-n-appointments-find-conflicting-appointments/",
+        URL2: "https://www.codingninjas.com/codestudio/problems/find-conflicting-meetings_1170047?topList=love-babbar-dsa-sheet-problems",
+      },
+      {
+        Topic: "BST",
+        Problem: "Check preorder is valid or not",
+        Done: false,
+        Bookmark: false,
+        Notes: "",
+        URL: "https://practice.geeksforgeeks.org/problems/preorder-to-postorder/0",
+        URL2: "https://www.codingninjas.com/codestudio/problems/check-if-preorder-traversal-is-valid_1164410?topList=love-babbar-dsa-sheet-problems",
+      },
+      {
+        Topic: "BST",
+        Problem: "Check whether BST contains Dead end",
+        Done: false,
+        Bookmark: false,
+        Notes: "",
+        URL: "https://practice.geeksforgeeks.org/problems/check-whether-bst-contains-dead-end/1",
+        URL2: "https://www.codingninjas.com/codestudio/problems/check-for-dead-end-in-a-bst_1169457?topList=love-babbar-dsa-sheet-problems",
+      },
+      {
+        Topic: "BST",
+        Problem: "Largest BST in a Binary Tree [ V.V.V.V.V IMP ]",
+        Done: false,
+        Bookmark: false,
+        Notes: "",
+        URL: "https://practice.geeksforgeeks.org/problems/largest-bst/1",
+        URL2: "https://www.codingninjas.com/codestudio/problems/largest-bst-subtree_893103?topList=love-babbar-dsa-sheet-problems",
+      },
+      {
+        Topic: "BST",
+        Problem: "Flatten BST to sorted list",
+        Done: false,
+        Bookmark: false,
+        Notes: "",
+        URL: "https://www.geeksforgeeks.org/flatten-bst-to-sorted-list-increasing-order/",
+        URL2: "https://www.codingninjas.com/codestudio/problems/flatten-bst-to-a-sorted-list_1169459?topList=love-babbar-dsa-sheet-problems",
+      },
+    ],
+  },
   {
     topicName: "Greedy",
     position: 7,
@@ -2397,193 +2399,196 @@ export default [
       },
     ],
   },
-  // 	{
-  // 		topicName: 'BackTracking',
-  // 		position: 8,
-  // 		started: false,
-  // 		doneQuestions: 0,
-  // description:
-  // 		questions: [
-  // 			{
-  // 				"Topic": "BackTracking",
-  // 				"Problem": "Rat in a maze Problem",
-  // 				"Done": false,
-  // 				"Bookmark": false,
-  // 				"Notes": "",
-  // 				"URL": "https://practice.geeksforgeeks.org/problems/rat-in-a-maze-problem/1",
-  // 				"URL2": "https://www.codingninjas.com/codestudio/problems/rat-in-a-maze_1215030?topList=love-babbar-dsa-sheet-problems"
-  // 			},
-  // 			{
-  // 				"Topic": "BackTracking",
-  // 				"Problem": "Printing all solutions in N-Queen Problem",
-  // 				"Done": false,
-  // 				"Bookmark": false,
-  // 				"Notes": "",
-  // 				"URL": "https://www.geeksforgeeks.org/printing-solutions-n-queen-problem/",
-  // 				"URL2": "https://www.codingninjas.com/codestudio/problems/the-n-queens-puzzle_981286?topList=love-babbar-dsa-sheet-problems"
-  // 			},
-  // 			{
-  // 				"Topic": "BackTracking",
-  // 				"Problem": "Word Break Problem using Backtracking",
-  // 				"Done": false,
-  // 				"Bookmark": false,
-  // 				"Notes": "",
-  // 				"URL": "https://practice.geeksforgeeks.org/problems/word-break-part-2/0",
-  // 				"URL2": "https://www.codingninjas.com/codestudio/problems/word-break-ii_983635?topList=love-babbar-dsa-sheet-problems"
-  // 			},
-  // 			{
-  // 				"Topic": "BackTracking",
-  // 				"Problem": "Remove Invalid Parentheses",
-  // 				"Done": false,
-  // 				"Bookmark": false,
-  // 				"Notes": "",
-  // 				"URL": "https://leetcode.com/problems/remove-invalid-parentheses/",
-  // 				"URL2": "https://www.codingninjas.com/codestudio/problems/generate-all-valid-strings_1170524?topList=love-babbar-dsa-sheet-problems"
-  // 			},
-  // 			{
-  // 				"Topic": "BackTracking",
-  // 				"Problem": "Sudoku Solver",
-  // 				"Done": false,
-  // 				"Bookmark": false,
-  // 				"Notes": "",
-  // 				"URL": "https://practice.geeksforgeeks.org/problems/solve-the-sudoku/0",
-  // 				"URL2": "https://www.codingninjas.com/codestudio/problems/sudoku-solver_699919?topList=love-babbar-dsa-sheet-problems"
-  // 			},
-  // 			{
-  // 				"Topic": "BackTracking",
-  // 				"Problem": "m Coloring Problem",
-  // 				"Done": false,
-  // 				"Bookmark": false,
-  // 				"Notes": "",
-  // 				"URL": "https://practice.geeksforgeeks.org/problems/m-coloring-problem/0",
-  // 				"URL2": "https://www.codingninjas.com/codestudio/problems/m-coloring-problem_981273?topList=love-babbar-dsa-sheet-problems"
-  // 			},
-  // 			{
-  // 				"Topic": "BackTracking",
-  // 				"Problem": "Print all palindromic partitions of a string",
-  // 				"Done": false,
-  // 				"Bookmark": false,
-  // 				"Notes": "",
-  // 				"URL": "https://www.geeksforgeeks.org/given-a-string-print-all-possible-palindromic-partition/",
-  // 				"URL2": "https://www.codingninjas.com/codestudio/problems/palindrome-partitions_981290?topList=love-babbar-dsa-sheet-problems"
-  // 			},
-  // 			{
-  // 				"Topic": "BackTracking",
-  // 				"Problem": "Subset Sum Problem",
-  // 				"Done": false,
-  // 				"Bookmark": false,
-  // 				"Notes": "",
-  // 				"URL": "https://practice.geeksforgeeks.org/problems/subset-sum-problem2014/1",
-  // 				"URL2": "https://www.codingninjas.com/codestudio/problems/partition-equal-subset-sum_892980?topList=love-babbar-dsa-sheet-problems"
-  // 			},
-  // 			{
-  // 				"Topic": "BackTracking",
-  // 				"Problem": "The Knight’s tour problem",
-  // 				"Done": false,
-  // 				"Bookmark": false,
-  // 				"Notes": "",
-  // 				"URL": "https://www.geeksforgeeks.org/the-knights-tour-problem-backtracking-1/",
-  // 				"URL2": "https://www.codingninjas.com/codestudio/problems/knight-tour_1170518?topList=love-babbar-dsa-sheet-problems"
-  // 			},
-  // 			{
-  // 				"Topic": "BackTracking",
-  // 				"Problem": "Tug of War",
-  // 				"Done": false,
-  // 				"Bookmark": false,
-  // 				"Notes": "",
-  // 				"URL": "https://www.geeksforgeeks.org/tug-of-war/",
-  // 				"URL2": "https://www.codingninjas.com/codestudio/problems/tug-of-war_985253?topList=love-babbar-dsa-sheet-problems"
-  // 			},
-  // 			{
-  // 				"Topic": "BackTracking",
-  // 				"Problem": "Find shortest safe route in a path with landmines",
-  // 				"Done": false,
-  // 				"Bookmark": false,
-  // 				"Notes": "",
-  // 				"URL": "https://www.geeksforgeeks.org/find-shortest-safe-route-in-a-path-with-landmines/",
-  // 				"URL2": "https://www.codingninjas.com/codestudio/problems/shortest-safe-route-in-a-field-with-landmines_1164264?topList=love-babbar-dsa-sheet-problems"
-  // 			},
-  // 			{
-  // 				"Topic": "BackTracking",
-  // 				"Problem": "Combinational Sum",
-  // 				"Done": false,
-  // 				"Bookmark": false,
-  // 				"Notes": "",
-  // 				"URL": "https://practice.geeksforgeeks.org/problems/combination-sum/0",
-  // 				"URL2": "https://www.codingninjas.com/codestudio/problems/combination-sum_981296?topList=love-babbar-dsa-sheet-problems"
-  // 			},
-  // 			{
-  // 				"Topic": "BackTracking",
-  // 				"Problem": "Find Maximum number possible by doing at-most K swaps",
-  // 				"Done": false,
-  // 				"Bookmark": false,
-  // 				"Notes": "",
-  // 				"URL": "https://practice.geeksforgeeks.org/problems/largest-number-in-k-swaps/0",
-  // 				"URL2": "https://www.codingninjas.com/codestudio/problems/find-maximum-number-possible-by-doing-at-most-k-swaps_1169469?topList=love-babbar-dsa-sheet-problems"
-  // 			},
-  // 			{
-  // 				"Topic": "BackTracking",
-  // 				"Problem": "Print all permutations of a string ",
-  // 				"Done": false,
-  // 				"Bookmark": false,
-  // 				"Notes": "",
-  // 				"URL": "https://practice.geeksforgeeks.org/problems/permutations-of-a-given-string/0",
-  // 				"URL2": ""
-  // 			},
-  // 			{
-  // 				"Topic": "BackTracking",
-  // 				"Problem": "Find if there is a path of more than k length from a source",
-  // 				"Done": false,
-  // 				"Bookmark": false,
-  // 				"Notes": "",
-  // 				"URL": "https://www.geeksforgeeks.org/find-if-there-is-a-path-of-more-than-k-length-from-a-source/",
-  // 				"URL2": "https://www.codingninjas.com/codestudio/problems/find-if-there-is-a-path-of-more-than-k-length-from-a-source_1229512?topList=love-babbar-dsa-sheet-problems"
-  // 			},
-  // 			{
-  // 				"Topic": "BackTracking",
-  // 				"Problem": "Longest Possible Route in a Matrix with Hurdles",
-  // 				"Done": false,
-  // 				"Bookmark": false,
-  // 				"Notes": "",
-  // 				"URL": "https://www.geeksforgeeks.org/longest-possible-route-in-a-matrix-with-hurdles/",
-  // 				"URL2": "https://www.codingninjas.com/codestudio/problems/longest-route_1170525?topList=love-babbar-dsa-sheet-problems"
-  // 			},
-  // 			{
-  // 				"Topic": "BackTracking",
-  // 				"Problem": "Print all possible paths from top left to bottom right of a mXn matrix",
-  // 				"Done": false,
-  // 				"Bookmark": false,
-  // 				"Notes": "",
-  // 				"URL": "https://www.geeksforgeeks.org/print-all-possible-paths-from-top-left-to-bottom-right-of-a-mxn-matrix/",
-  // 				"URL2": "https://www.codingninjas.com/codestudio/problems/print-all-possible-paths-from-top-left-corner-to-bottom-right-corner-of-a-2-d-matrix_1171152?topList=love-babbar-dsa-sheet-problems"
-  // 			},
-  // 			{
-  // 				"Topic": "BackTracking",
-  // 				"Problem": "Partition of a set intoK subsets with equal sum",
-  // 				"Done": false,
-  // 				"Bookmark": false,
-  // 				"Notes": "",
-  // 				"URL": "https://practice.geeksforgeeks.org/problems/partition-array-to-k-subsets/1",
-  // 				"URL2": "https://www.codingninjas.com/codestudio/problems/partition-to-k-equal-sum-subsets_843262?topList=love-babbar-dsa-sheet-problems"
-  // 			},
-  // 			{
-  // 				"Topic": "BackTracking",
-  // 				"Problem": "Find the K-th Permutation Sequence of first N natural numbers",
-  // 				"Done": false,
-  // 				"Bookmark": false,
-  // 				"Notes": "",
-  // 				"URL": "https://www.geeksforgeeks.org/find-the-k-th-permutation-sequence-of-first-n-natural-numbers/",
-  // 				"URL2": "https://www.codingninjas.com/codestudio/problems/k-th-permutation-sequence-of-first-n-natural-numbers_1164403?topList=love-babbar-dsa-sheet-problems"
-  // 			}
-  // 		],
-  // 	},
+  {
+    topicName: "BackTracking",
+    position: 8,
+    started: false,
+    doneQuestions: 0,
+    description:
+      "Backtracking is an algorithmic technique for solving problems recursively by trying to build a solution incrementally, one piece at a time, removing those solutions that fail to satisfy the constraints of the problem at any point in time. ",
+    questions: [
+      {
+        Topic: "BackTracking",
+        Problem: "Rat in a maze Problem",
+        Done: false,
+        Bookmark: false,
+        Notes: "",
+        URL: "https://practice.geeksforgeeks.org/problems/rat-in-a-maze-problem/1",
+        URL2: "https://www.codingninjas.com/codestudio/problems/rat-in-a-maze_1215030?topList=love-babbar-dsa-sheet-problems",
+      },
+      {
+        Topic: "BackTracking",
+        Problem: "Printing all solutions in N-Queen Problem",
+        Done: false,
+        Bookmark: false,
+        Notes: "",
+        URL: "https://www.geeksforgeeks.org/printing-solutions-n-queen-problem/",
+        URL2: "https://www.codingninjas.com/codestudio/problems/the-n-queens-puzzle_981286?topList=love-babbar-dsa-sheet-problems",
+      },
+      {
+        Topic: "BackTracking",
+        Problem: "Word Break Problem using Backtracking",
+        Done: false,
+        Bookmark: false,
+        Notes: "",
+        URL: "https://practice.geeksforgeeks.org/problems/word-break-part-2/0",
+        URL2: "https://www.codingninjas.com/codestudio/problems/word-break-ii_983635?topList=love-babbar-dsa-sheet-problems",
+      },
+      {
+        Topic: "BackTracking",
+        Problem: "Remove Invalid Parentheses",
+        Done: false,
+        Bookmark: false,
+        Notes: "",
+        URL: "https://leetcode.com/problems/remove-invalid-parentheses/",
+        URL2: "https://www.codingninjas.com/codestudio/problems/generate-all-valid-strings_1170524?topList=love-babbar-dsa-sheet-problems",
+      },
+      {
+        Topic: "BackTracking",
+        Problem: "Sudoku Solver",
+        Done: false,
+        Bookmark: false,
+        Notes: "",
+        URL: "https://practice.geeksforgeeks.org/problems/solve-the-sudoku/0",
+        URL2: "https://www.codingninjas.com/codestudio/problems/sudoku-solver_699919?topList=love-babbar-dsa-sheet-problems",
+      },
+      {
+        Topic: "BackTracking",
+        Problem: "m Coloring Problem",
+        Done: false,
+        Bookmark: false,
+        Notes: "",
+        URL: "https://practice.geeksforgeeks.org/problems/m-coloring-problem/0",
+        URL2: "https://www.codingninjas.com/codestudio/problems/m-coloring-problem_981273?topList=love-babbar-dsa-sheet-problems",
+      },
+      {
+        Topic: "BackTracking",
+        Problem: "Print all palindromic partitions of a string",
+        Done: false,
+        Bookmark: false,
+        Notes: "",
+        URL: "https://www.geeksforgeeks.org/given-a-string-print-all-possible-palindromic-partition/",
+        URL2: "https://www.codingninjas.com/codestudio/problems/palindrome-partitions_981290?topList=love-babbar-dsa-sheet-problems",
+      },
+      {
+        Topic: "BackTracking",
+        Problem: "Subset Sum Problem",
+        Done: false,
+        Bookmark: false,
+        Notes: "",
+        URL: "https://practice.geeksforgeeks.org/problems/subset-sum-problem2014/1",
+        URL2: "https://www.codingninjas.com/codestudio/problems/partition-equal-subset-sum_892980?topList=love-babbar-dsa-sheet-problems",
+      },
+      {
+        Topic: "BackTracking",
+        Problem: "The Knight’s tour problem",
+        Done: false,
+        Bookmark: false,
+        Notes: "",
+        URL: "https://www.geeksforgeeks.org/the-knights-tour-problem-backtracking-1/",
+        URL2: "https://www.codingninjas.com/codestudio/problems/knight-tour_1170518?topList=love-babbar-dsa-sheet-problems",
+      },
+      {
+        Topic: "BackTracking",
+        Problem: "Tug of War",
+        Done: false,
+        Bookmark: false,
+        Notes: "",
+        URL: "https://www.geeksforgeeks.org/tug-of-war/",
+        URL2: "https://www.codingninjas.com/codestudio/problems/tug-of-war_985253?topList=love-babbar-dsa-sheet-problems",
+      },
+      {
+        Topic: "BackTracking",
+        Problem: "Find shortest safe route in a path with landmines",
+        Done: false,
+        Bookmark: false,
+        Notes: "",
+        URL: "https://www.geeksforgeeks.org/find-shortest-safe-route-in-a-path-with-landmines/",
+        URL2: "https://www.codingninjas.com/codestudio/problems/shortest-safe-route-in-a-field-with-landmines_1164264?topList=love-babbar-dsa-sheet-problems",
+      },
+      {
+        Topic: "BackTracking",
+        Problem: "Combinational Sum",
+        Done: false,
+        Bookmark: false,
+        Notes: "",
+        URL: "https://practice.geeksforgeeks.org/problems/combination-sum/0",
+        URL2: "https://www.codingninjas.com/codestudio/problems/combination-sum_981296?topList=love-babbar-dsa-sheet-problems",
+      },
+      {
+        Topic: "BackTracking",
+        Problem: "Find Maximum number possible by doing at-most K swaps",
+        Done: false,
+        Bookmark: false,
+        Notes: "",
+        URL: "https://practice.geeksforgeeks.org/problems/largest-number-in-k-swaps/0",
+        URL2: "https://www.codingninjas.com/codestudio/problems/find-maximum-number-possible-by-doing-at-most-k-swaps_1169469?topList=love-babbar-dsa-sheet-problems",
+      },
+      {
+        Topic: "BackTracking",
+        Problem: "Print all permutations of a string ",
+        Done: false,
+        Bookmark: false,
+        Notes: "",
+        URL: "https://practice.geeksforgeeks.org/problems/permutations-of-a-given-string/0",
+        URL2: "",
+      },
+      {
+        Topic: "BackTracking",
+        Problem: "Find if there is a path of more than k length from a source",
+        Done: false,
+        Bookmark: false,
+        Notes: "",
+        URL: "https://www.geeksforgeeks.org/find-if-there-is-a-path-of-more-than-k-length-from-a-source/",
+        URL2: "https://www.codingninjas.com/codestudio/problems/find-if-there-is-a-path-of-more-than-k-length-from-a-source_1229512?topList=love-babbar-dsa-sheet-problems",
+      },
+      {
+        Topic: "BackTracking",
+        Problem: "Longest Possible Route in a Matrix with Hurdles",
+        Done: false,
+        Bookmark: false,
+        Notes: "",
+        URL: "https://www.geeksforgeeks.org/longest-possible-route-in-a-matrix-with-hurdles/",
+        URL2: "https://www.codingninjas.com/codestudio/problems/longest-route_1170525?topList=love-babbar-dsa-sheet-problems",
+      },
+      {
+        Topic: "BackTracking",
+        Problem:
+          "Print all possible paths from top left to bottom right of a mXn matrix",
+        Done: false,
+        Bookmark: false,
+        Notes: "",
+        URL: "https://www.geeksforgeeks.org/print-all-possible-paths-from-top-left-to-bottom-right-of-a-mxn-matrix/",
+        URL2: "https://www.codingninjas.com/codestudio/problems/print-all-possible-paths-from-top-left-corner-to-bottom-right-corner-of-a-2-d-matrix_1171152?topList=love-babbar-dsa-sheet-problems",
+      },
+      {
+        Topic: "BackTracking",
+        Problem: "Partition of a set intoK subsets with equal sum",
+        Done: false,
+        Bookmark: false,
+        Notes: "",
+        URL: "https://practice.geeksforgeeks.org/problems/partition-array-to-k-subsets/1",
+        URL2: "https://www.codingninjas.com/codestudio/problems/partition-to-k-equal-sum-subsets_843262?topList=love-babbar-dsa-sheet-problems",
+      },
+      {
+        Topic: "BackTracking",
+        Problem:
+          "Find the K-th Permutation Sequence of first N natural numbers",
+        Done: false,
+        Bookmark: false,
+        Notes: "",
+        URL: "https://www.geeksforgeeks.org/find-the-k-th-permutation-sequence-of-first-n-natural-numbers/",
+        URL2: "https://www.codingninjas.com/codestudio/problems/k-th-permutation-sequence-of-first-n-natural-numbers_1164403?topList=love-babbar-dsa-sheet-problems",
+      },
+    ],
+  },
   {
     topicName: "Stacks & Queues",
     position: 9,
     started: false,
     doneQuestions: 0,
     description:
-      "A stack is a linear data structure that follows a particular order in which the operations are performed. The order may be LIFO(Last In First Out) or FILO(First In Last Out).",
+      "A stack is a linear data structure that follows a particular order in which the operations are performed. The order may be LIFO(Last In First Out) or FILO(First In Last Out), A Queue is defined as a linear data structure that is open at both ends and the operations are performed in First In First Out (FIFO) order.",
     questions: [
       {
         Topic: "Stacks & Queues",
@@ -3520,69 +3525,70 @@ export default [
       },
     ],
   },
-  // 	{
-  // 		topicName: 'Trie',
-  // 		position: 12,
-  // 		started: false,
-  // 		doneQuestions: 0,
-  // description:
-  // 		questions: [
-  // 			{
-  // 				"Topic": "Trie",
-  // 				"Problem": "Construct a trie from scratch",
-  // 				"Done": false,
-  // 				"Bookmark": false,
-  // 				"Notes": "",
-  // 				"URL": "https://www.geeksforgeeks.org/trie-insert-and-search/",
-  // 				"URL2": "https://www.codingninjas.com/codestudio/problems/implement-trie_631356?topList=love-babbar-dsa-sheet-problems"
-  // 			},
-  // 			{
-  // 				"Topic": "Trie",
-  // 				"Problem": "Find shortest unique prefix for every word in a given list",
-  // 				"Done": false,
-  // 				"Bookmark": false,
-  // 				"Notes": "",
-  // 				"URL": "https://www.geeksforgeeks.org/find-all-shortest-unique-prefixes-to-represent-each-word-in-a-given-list/",
-  // 				"URL2": "https://www.codingninjas.com/codestudio/problems/shortest-unique-prefix_1094887?topList=love-babbar-dsa-sheet-problems"
-  // 			},
-  // 			{
-  // 				"Topic": "Trie",
-  // 				"Problem": "Word Break Problem | (Trie solution)",
-  // 				"Done": false,
-  // 				"Bookmark": false,
-  // 				"Notes": "",
-  // 				"URL": "https://www.geeksforgeeks.org/word-break-problem-trie-solution/",
-  // 				"URL2": "https://www.codingninjas.com/codestudio/problems/word-break_1094901?topList=love-babbar-dsa-sheet-problems"
-  // 			},
-  // 			{
-  // 				"Topic": "Trie",
-  // 				"Problem": "Given a sequence of words, print all anagrams together",
-  // 				"Done": false,
-  // 				"Bookmark": false,
-  // 				"Notes": "",
-  // 				"URL": "https://practice.geeksforgeeks.org/problems/k-anagrams-1/0",
-  // 				"URL2": "https://www.codingninjas.com/codestudio/problems/group-anagrams_800285?topList=love-babbar-dsa-sheet-problems"
-  // 			},
-  // 			{
-  // 				"Topic": "Trie",
-  // 				"Problem": "Implement a Phone Directory",
-  // 				"Done": false,
-  // 				"Bookmark": false,
-  // 				"Notes": "",
-  // 				"URL": "https://practice.geeksforgeeks.org/problems/phone-directory/0",
-  // 				"URL2": "https://www.codingninjas.com/codestudio/problems/implement-a-phone-directory_1062666?topList=love-babbar-dsa-sheet-problems"
-  // 			},
-  // 			{
-  // 				"Topic": "Trie",
-  // 				"Problem": "Print unique rows in a given boolean matrix",
-  // 				"Done": false,
-  // 				"Bookmark": false,
-  // 				"Notes": "",
-  // 				"URL": "https://practice.geeksforgeeks.org/problems/unique-rows-in-boolean-matrix/1",
-  // 				"URL2": "https://www.codingninjas.com/codestudio/problems/unique-matrix_1214696?topList=love-babbar-dsa-sheet-problems"
-  // 			}
-  // 		],
-  // 	},
+  {
+    topicName: "Trie",
+    position: 12,
+    started: false,
+    doneQuestions: 0,
+    description:
+      "A trie (derived from retrieval) is a multiway tree data structure used for storing strings over an alphabet. It is used to store a large amount of strings. The pattern matching can be done efficiently using tries.",
+    questions: [
+      {
+        Topic: "Trie",
+        Problem: "Construct a trie from scratch",
+        Done: false,
+        Bookmark: false,
+        Notes: "",
+        URL: "https://www.geeksforgeeks.org/trie-insert-and-search/",
+        URL2: "https://www.codingninjas.com/codestudio/problems/implement-trie_631356?topList=love-babbar-dsa-sheet-problems",
+      },
+      {
+        Topic: "Trie",
+        Problem: "Find shortest unique prefix for every word in a given list",
+        Done: false,
+        Bookmark: false,
+        Notes: "",
+        URL: "https://www.geeksforgeeks.org/find-all-shortest-unique-prefixes-to-represent-each-word-in-a-given-list/",
+        URL2: "https://www.codingninjas.com/codestudio/problems/shortest-unique-prefix_1094887?topList=love-babbar-dsa-sheet-problems",
+      },
+      {
+        Topic: "Trie",
+        Problem: "Word Break Problem | (Trie solution)",
+        Done: false,
+        Bookmark: false,
+        Notes: "",
+        URL: "https://www.geeksforgeeks.org/word-break-problem-trie-solution/",
+        URL2: "https://www.codingninjas.com/codestudio/problems/word-break_1094901?topList=love-babbar-dsa-sheet-problems",
+      },
+      {
+        Topic: "Trie",
+        Problem: "Given a sequence of words, print all anagrams together",
+        Done: false,
+        Bookmark: false,
+        Notes: "",
+        URL: "https://practice.geeksforgeeks.org/problems/k-anagrams-1/0",
+        URL2: "https://www.codingninjas.com/codestudio/problems/group-anagrams_800285?topList=love-babbar-dsa-sheet-problems",
+      },
+      {
+        Topic: "Trie",
+        Problem: "Implement a Phone Directory",
+        Done: false,
+        Bookmark: false,
+        Notes: "",
+        URL: "https://practice.geeksforgeeks.org/problems/phone-directory/0",
+        URL2: "https://www.codingninjas.com/codestudio/problems/implement-a-phone-directory_1062666?topList=love-babbar-dsa-sheet-problems",
+      },
+      {
+        Topic: "Trie",
+        Problem: "Print unique rows in a given boolean matrix",
+        Done: false,
+        Bookmark: false,
+        Notes: "",
+        URL: "https://practice.geeksforgeeks.org/problems/unique-rows-in-boolean-matrix/1",
+        URL2: "https://www.codingninjas.com/codestudio/problems/unique-matrix_1214696?topList=love-babbar-dsa-sheet-problems",
+      },
+    ],
+  },
   {
     topicName: "Dynamic Programming",
     position: 13,
@@ -4137,104 +4143,107 @@ export default [
       },
     ],
   },
-  // 	{
-  // 		topicName: 'Bit Manipulation',
-  // 		position: 14,
-  // 		started: false,
-  // 		doneQuestions: 0,
-  // description:
-  // 		questions: [
-  // 			{
-  // 				"Topic": "Bit Manipulation",
-  // 				"Problem": "Count set bits in an integer",
-  // 				"Done": false,
-  // 				"Bookmark": false,
-  // 				"Notes": "",
-  // 				"URL": "https://practice.geeksforgeeks.org/problems/set-bits0143/1",
-  // 				"URL2": "https://www.codingninjas.com/codestudio/problems/set-bits_1164179?topList=love-babbar-dsa-sheet-problems"
-  // 			},
-  // 			{
-  // 				"Topic": "Bit Manipulation",
-  // 				"Problem": "Find the two non-repeating elements in an array of repeating elements",
-  // 				"Done": false,
-  // 				"Bookmark": false,
-  // 				"Notes": "",
-  // 				"URL": "https://practice.geeksforgeeks.org/problems/finding-the-numbers0215/1",
-  // 				"URL2": "https://www.codingninjas.com/codestudio/problems/unique-pair-using-bits_972997?topList=love-babbar-dsa-sheet-problems"
-  // 			},
-  // 			{
-  // 				"Topic": "Bit Manipulation",
-  // 				"Problem": "Count number of bits to be flipped to convert A to B",
-  // 				"Done": false,
-  // 				"Bookmark": false,
-  // 				"Notes": "",
-  // 				"URL": "https://practice.geeksforgeeks.org/problems/bit-difference/0",
-  // 				"URL2": "https://www.codingninjas.com/codestudio/problems/number-of-flips_3125902?topList=love-babbar-dsa-sheet-problems"
-  // 			},
-  // 			{
-  // 				"Topic": "Bit Manipulation",
-  // 				"Problem": "Count total set bits in all numbers from 1 to n",
-  // 				"Done": false,
-  // 				"Bookmark": false,
-  // 				"Notes": "",
-  // 				"URL": "https://practice.geeksforgeeks.org/problems/count-total-set-bits/0",
-  // 				"URL2": "https://www.codingninjas.com/codestudio/problems/count-set-bits_1112627?topList=love-babbar-dsa-sheet-problems"
-  // 			},
-  // 			{
-  // 				"Topic": "Bit Manipulation",
-  // 				"Problem": "Program to find whether a no is power of two",
-  // 				"Done": false,
-  // 				"Bookmark": false,
-  // 				"Notes": "",
-  // 				"URL": "https://practice.geeksforgeeks.org/problems/power-of-2/0",
-  // 				"URL2": "https://www.codingninjas.com/codestudio/problems/power-of-two_893061?topList=love-babbar-dsa-sheet-problems"
-  // 			},
-  // 			{
-  // 				"Topic": "Bit Manipulation",
-  // 				"Problem": "Find position of the only set bit",
-  // 				"Done": false,
-  // 				"Bookmark": false,
-  // 				"Notes": "",
-  // 				"URL": "https://practice.geeksforgeeks.org/problems/find-position-of-set-bit3706/1",
-  // 				"URL2": "https://www.codingninjas.com/codestudio/problems/find-the-lone-set-bit_1062725?topList=love-babbar-dsa-sheet-problems"
-  // 			},
-  // 			{
-  // 				"Topic": "Bit Manipulation",
-  // 				"Problem": "Copy set bits in a range",
-  // 				"Done": false,
-  // 				"Bookmark": false,
-  // 				"Notes": "",
-  // 				"URL": "https://www.geeksforgeeks.org/copy-set-bits-in-a-range/",
-  // 				"URL2": "https://www.codingninjas.com/codestudio/problems/copy-bits-in-range_3150011?topList=love-babbar-dsa-sheet-problems"
-  // 			},
-  // 			{
-  // 				"Topic": "Bit Manipulation",
-  // 				"Problem": "Divide two integers without using multiplication, division and mod operator",
-  // 				"Done": false,
-  // 				"Bookmark": false,
-  // 				"Notes": "",
-  // 				"URL": "https://www.geeksforgeeks.org/divide-two-integers-without-using-multiplication-division-mod-operator/",
-  // 				"URL2": "https://www.codingninjas.com/codestudio/problems/divide-two-integers_1112617?topList=love-babbar-dsa-sheet-problems"
-  // 			},
-  // 			{
-  // 				"Topic": "Bit Manipulation",
-  // 				"Problem": "Calculate square of a number without using *, / and pow()",
-  // 				"Done": false,
-  // 				"Bookmark": false,
-  // 				"Notes": "",
-  // 				"URL": "https://www.geeksforgeeks.org/calculate-square-of-a-number-without-using-and-pow/",
-  // 				"URL2": "https://www.codingninjas.com/codestudio/problems/calculate-square-of-a-number_1112623?topList=love-babbar-dsa-sheet-problems"
-  // 			},
-  // 			{
-  // 				"Topic": "Bit Manipulation",
-  // 				"Problem": "Power Set",
-  // 				"Done": false,
-  // 				"Bookmark": false,
-  // 				"Notes": "",
-  // 				"URL": "https://practice.geeksforgeeks.org/problems/power-set4302/1",
-  // 				"URL2": ""
-  // 			}
-  // 		],
-  // 	},
+  {
+    topicName: "Bit Manipulation",
+    position: 14,
+    started: false,
+    doneQuestions: 0,
+    description:
+      "Bit Manipulation is a technique used in a variety of problems to get the solution in an optimized way. This technique is very effective from a Competitive Programming point of view. It is all about Bitwise Operators which directly works upon binary numbers or bits of numbers that help the implementation fast.",
+    questions: [
+      {
+        Topic: "Bit Manipulation",
+        Problem: "Count set bits in an integer",
+        Done: false,
+        Bookmark: false,
+        Notes: "",
+        URL: "https://practice.geeksforgeeks.org/problems/set-bits0143/1",
+        URL2: "https://www.codingninjas.com/codestudio/problems/set-bits_1164179?topList=love-babbar-dsa-sheet-problems",
+      },
+      {
+        Topic: "Bit Manipulation",
+        Problem:
+          "Find the two non-repeating elements in an array of repeating elements",
+        Done: false,
+        Bookmark: false,
+        Notes: "",
+        URL: "https://practice.geeksforgeeks.org/problems/finding-the-numbers0215/1",
+        URL2: "https://www.codingninjas.com/codestudio/problems/unique-pair-using-bits_972997?topList=love-babbar-dsa-sheet-problems",
+      },
+      {
+        Topic: "Bit Manipulation",
+        Problem: "Count number of bits to be flipped to convert A to B",
+        Done: false,
+        Bookmark: false,
+        Notes: "",
+        URL: "https://practice.geeksforgeeks.org/problems/bit-difference/0",
+        URL2: "https://www.codingninjas.com/codestudio/problems/number-of-flips_3125902?topList=love-babbar-dsa-sheet-problems",
+      },
+      {
+        Topic: "Bit Manipulation",
+        Problem: "Count total set bits in all numbers from 1 to n",
+        Done: false,
+        Bookmark: false,
+        Notes: "",
+        URL: "https://practice.geeksforgeeks.org/problems/count-total-set-bits/0",
+        URL2: "https://www.codingninjas.com/codestudio/problems/count-set-bits_1112627?topList=love-babbar-dsa-sheet-problems",
+      },
+      {
+        Topic: "Bit Manipulation",
+        Problem: "Program to find whether a no is power of two",
+        Done: false,
+        Bookmark: false,
+        Notes: "",
+        URL: "https://practice.geeksforgeeks.org/problems/power-of-2/0",
+        URL2: "https://www.codingninjas.com/codestudio/problems/power-of-two_893061?topList=love-babbar-dsa-sheet-problems",
+      },
+      {
+        Topic: "Bit Manipulation",
+        Problem: "Find position of the only set bit",
+        Done: false,
+        Bookmark: false,
+        Notes: "",
+        URL: "https://practice.geeksforgeeks.org/problems/find-position-of-set-bit3706/1",
+        URL2: "https://www.codingninjas.com/codestudio/problems/find-the-lone-set-bit_1062725?topList=love-babbar-dsa-sheet-problems",
+      },
+      {
+        Topic: "Bit Manipulation",
+        Problem: "Copy set bits in a range",
+        Done: false,
+        Bookmark: false,
+        Notes: "",
+        URL: "https://www.geeksforgeeks.org/copy-set-bits-in-a-range/",
+        URL2: "https://www.codingninjas.com/codestudio/problems/copy-bits-in-range_3150011?topList=love-babbar-dsa-sheet-problems",
+      },
+      {
+        Topic: "Bit Manipulation",
+        Problem:
+          "Divide two integers without using multiplication, division and mod operator",
+        Done: false,
+        Bookmark: false,
+        Notes: "",
+        URL: "https://www.geeksforgeeks.org/divide-two-integers-without-using-multiplication-division-mod-operator/",
+        URL2: "https://www.codingninjas.com/codestudio/problems/divide-two-integers_1112617?topList=love-babbar-dsa-sheet-problems",
+      },
+      {
+        Topic: "Bit Manipulation",
+        Problem: "Calculate square of a number without using *, / and pow()",
+        Done: false,
+        Bookmark: false,
+        Notes: "",
+        URL: "https://www.geeksforgeeks.org/calculate-square-of-a-number-without-using-and-pow/",
+        URL2: "https://www.codingninjas.com/codestudio/problems/calculate-square-of-a-number_1112623?topList=love-babbar-dsa-sheet-problems",
+      },
+      {
+        Topic: "Bit Manipulation",
+        Problem: "Power Set",
+        Done: false,
+        Bookmark: false,
+        Notes: "",
+        URL: "https://practice.geeksforgeeks.org/problems/power-set4302/1",
+        URL2: "",
+      },
+    ],
+  },
 ];
 export const version = 100000029;
