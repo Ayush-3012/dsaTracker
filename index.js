@@ -24,7 +24,21 @@ questions.forEach(function (item) {
   );
 });
 
+async function processTables() {
+  for (var i = 0; i < dsaTables.length; i++) {
+    if (
+      `${dsaTables[i].modelName}` ===
+      _.camelCase(_.lowerCase(questions[i].topicName))
+    ) {
+      questions[i].doneQuestions = await dsaTables[i]
+        .count()
+        .then((cnt) => cnt);
+    }
+  }
+}
+
 app.get("/", (req, res) => {
+  processTables();
   res.render("index.ejs", {
     data: questions,
     _: _,
@@ -46,10 +60,14 @@ app.get("/:topic", async (req, res) => {
 });
 
 app.post("/updatedSheet", (req, res) => {
-  const selectedQuesObj = JSON.parse(req.body.checkedQues);
+  let selectedQuesObj = JSON.parse(req.body.uncheckedQues);
+  if (req.body.checkedQues) {
+    selectedQuesObj = JSON.parse(req.body.checkedQues);
+  }
   for (var i = 0; i < dsaTables.length; i++) {
+    const currentTable = dsaTables[i];
     if (
-      `${dsaTables[i].modelName}` ===
+      `${currentTable.modelName}` ===
       _.camelCase(_.lowerCase(selectedQuesObj.topic))
     ) {
       const tableEntry = new dsaTables[i]({
@@ -57,7 +75,23 @@ app.post("/updatedSheet", (req, res) => {
         link1: selectedQuesObj.link1,
         link2: selectedQuesObj.link2,
       });
-      tableEntry.save();
+      currentTable
+        .findOne({ name: selectedQuesObj.name })
+        .then(function (foundQuestion) {
+          if (!foundQuestion) {
+            tableEntry.save();
+          } else {
+            currentTable
+              .deleteOne({ name: selectedQuesObj.name })
+              .then(function () {})
+              .catch(function (err) {
+                console.log(err);
+              });
+          }
+        })
+        .catch(function (err) {
+          console.log(err);
+        });
     }
   }
   res.status(204).send();

@@ -17,7 +17,15 @@
             <p class="questionCount">
               Total Questions: <%=item.questions.length%>
             </p>
-            <p class="progres">Progress: <%=item.questions.length/2%></p>
+            <div class="progress-container">
+              <% var percentQuesDone = (item.doneQuestions *
+              100)/item.questions.length %> <% if(percentQuesDone != 0) {%>
+              <p class="progress">Done: <%= item.doneQuestions%></p>
+              <progress value="<%=percentQuesDone%>" max="100"></progress>
+              <%=Math.trunc(percentQuesDone)%>% <% }else { %>
+              <p>Not yet started</p>
+              <% } %>
+            </div>
           </div>
           <div class="dsDef">
             <p class="paraContent"><%=item.description%></p>

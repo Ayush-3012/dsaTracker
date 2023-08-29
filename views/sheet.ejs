@@ -31,28 +31,33 @@
                   value="<%= JSON.stringify({ topic: item.Topic, name: item.Problem, link1: item.URL, link2: item.URL2 }) %>"
                   onchange="this.form.submit()"
                 />
+                <input
+                  type="hidden"
+                  name="uncheckedQues"
+                  value="<%= JSON.stringify({ topic: item.Topic, name: item.Problem, link1: item.URL, link2: item.URL2 }) %>"
+                />
               </td>
-              <td class="id"><h4><%= ++count %></h4></td>
-              <td class="questions">
-                <h4>
-                  <a href="<%=item.URL%>" target="_blank"><%=item.Problem%></a>
-                </h4>
-              </td>
-              <td class="links">
-                <% icon = item.URL.includes('geeksforgeeks') ?
-                '/assets/icons/geeksforgeeks.png' : '/assets/icons/leetcode.png'
-                %>
-                <a href="<%=item.URL%>" target="_blank"
-                  ><img src="<%=icon%>" alt="icon"
-                /></a>
-                <% if(item.URL2 !== "") { %>
-                <a href="<%=item.URL2%>" target="_blank"
-                  ><img src="/assets/icons/codingNinja.png" alt="icon"
-                /></a>
-                <% } %>
-              </td>
-              <!-- </tr> -->
             </form>
+            <td class="id"><h4><%= ++count %></h4></td>
+            <td class="questions">
+              <h4>
+                <a href="<%=item.URL%>" target="_blank"><%=item.Problem%></a>
+              </h4>
+            </td>
+            <td class="links">
+              <% icon = item.URL.includes('geeksforgeeks') ?
+              '/assets/icons/geeksforgeeks.png' : '/assets/icons/leetcode.png'
+              %>
+              <a href="<%=item.URL%>" target="_blank"
+                ><img src="<%=icon%>" alt="icon"
+              /></a>
+              <% if(item.URL2 !== "") { %>
+              <a href="<%=item.URL2%>" target="_blank"
+                ><img src="/assets/icons/codingNinja.png" alt="icon"
+              /></a>
+              <% } %>
+            </td>
+            <!-- </tr> -->
           </tbody>
         </table>
 
