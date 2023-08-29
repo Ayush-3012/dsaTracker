@@ -15,6 +15,7 @@ const compQueSchema = {
   name: String,
   link1: String,
   link2: String,
+  checked: Boolean,
 };
 
 const dsaTables = [];
@@ -24,7 +25,7 @@ questions.forEach(function (item) {
   );
 });
 
-async function processTables() {
+async function updateCount() {
   for (var i = 0; i < dsaTables.length; i++) {
     if (
       `${dsaTables[i].modelName}` ===
@@ -37,8 +38,22 @@ async function processTables() {
   }
 }
 
+async function updateDoneQues(topic, name) {
+  for (var i = 0; i < dsaTables.length; i++) {
+    if (_.lowerCase(questions[i].topicName) == topic) {
+      for (var j = 0; j < questions[i].questions.length; j++) {
+        if (questions[i].questions[j].Problem == name) {
+          questions[i].questions[j].Done = questions[i].questions[j].Done
+            ? false
+            : true;
+        }
+      }
+    }
+  }
+}
+
 app.get("/", (req, res) => {
-  processTables();
+  updateCount();
   res.render("index.ejs", {
     data: questions,
     _: _,
@@ -46,10 +61,12 @@ app.get("/", (req, res) => {
 });
 
 app.get("/about", async (req, res) => {
+  updateCount();
   res.render("about.ejs");
 });
 
 app.get("/:topic", async (req, res) => {
+  updateCount();
   const requestedDs = _.lowerCase(req.params.topic);
   questions.forEach(function (item) {
     if (_.lowerCase(item.topicName) == requestedDs)
@@ -60,6 +77,7 @@ app.get("/:topic", async (req, res) => {
 });
 
 app.post("/updatedSheet", (req, res) => {
+  updateCount();
   let selectedQuesObj = JSON.parse(req.body.uncheckedQues);
   if (req.body.checkedQues) {
     selectedQuesObj = JSON.parse(req.body.checkedQues);
@@ -80,6 +98,10 @@ app.post("/updatedSheet", (req, res) => {
         .then(function (foundQuestion) {
           if (!foundQuestion) {
             tableEntry.save();
+            updateDoneQues(
+              _.lowerCase(selectedQuesObj.topic),
+              selectedQuesObj.name
+            );
           } else {
             currentTable
               .deleteOne({ name: selectedQuesObj.name })
@@ -95,6 +117,7 @@ app.post("/updatedSheet", (req, res) => {
     }
   }
   res.status(204).send();
+  // res.redirect(`/:${_.lowerCase(selectedQuesObj.topic)}`);
 });
 
 app.listen(port, () => {

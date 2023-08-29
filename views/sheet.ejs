@@ -28,13 +28,23 @@
                 <input
                   type="checkbox"
                   name="checkedQues"
-                  value="<%= JSON.stringify({ topic: item.Topic, name: item.Problem, link1: item.URL, link2: item.URL2 }) %>"
+                  value="<%= JSON.stringify({ topic: item.Topic, name: item.Problem, link1: item.URL, link2: item.URL2}) %>"
                   onchange="this.form.submit()"
+                  <% if(item.Done) { %>
+                    checked
+                  <% } else{%>
+                    !checked
+                    <%}%>
                 />
                 <input
                   type="hidden"
                   name="uncheckedQues"
-                  value="<%= JSON.stringify({ topic: item.Topic, name: item.Problem, link1: item.URL, link2: item.URL2 }) %>"
+                  value="<%= JSON.stringify({ topic: item.Topic, name: item.Problem, link1: item.URL, link2: item.URL2}) %>"
+                  <% if(item.Done) { %>
+                    !checked
+                  <% } else{%>
+                    checked
+                    <%}%>
                 />
               </td>
             </form>
