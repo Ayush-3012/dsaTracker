@@ -6,25 +6,31 @@
 }
 
 :root {
-  --color-primary: #5f1687;
-  --color-secondary: #1bd6bf;
+  --color-primary: #6f61c0;
+  // --color-secondary: #a084e8;
+  --color-secondary: #9c69f5;
   --color-white: #fff;
   --color-black: #000;
-  --color-no-0: #f8f8f8;
-  --color-no-1: #dbe1e8;
+  --color-text: #5c6973;
+  --color-no-0: #8be8e5;
+  --color-no-1: #acd1e8;
   --color-no-2: #b2becd;
-  --color-no-3: #6c7983;
-  --color-no-4: #56648e;
+  --color-no-3: #5c6973;
+  --color-no-4: #343b40;
   --br-sm-2: 14px;
   --box-shadow-1: 0 3px 15px rgba(0, 0, 0, 0.3);
+  --border-option: 0.3rem solid var(--color-no-4);
 }
 
 body {
-  // background-color: var(--color-primary);
-  background-color: peru;
+  // background-color: var(--color-no-1);
   height: 100vh;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  color: var(--color-white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  // color: var(--color-white);
 }
 
 /* REMOVES SCROLL, EVEN ITS FUNCTIONING */
@@ -41,7 +47,12 @@ body {
   display: flex;
   justify-content: center;
   gap: 2rem;
-  background-color: white;
+  max-width: 95%;
+  width: 95%;
+  min-width: auto;
+  // background-color: white;
+  background-color: var(--color-primary);
+  border-radius: 5px;
   .active-btn {
     background-color: var(--color-secondary) !important;
     transition: all 0.4s ease-in-out;
@@ -52,7 +63,7 @@ body {
   .control {
     cursor: pointer;
     transition: all 0.2s ease-in-out;
-    background-color: var(--color-no-4);
+    background-color: var(--color-no-3);
     height: 40px;
     width: 40px;
     border-radius: 50%;
@@ -135,14 +146,14 @@ body {
 .main-Box::-webkit-scrollbar-track,
 .table-Body::-webkit-scrollbar-track {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-  background-color: #f5f5f5;
+  background-color: var(--color-no-2);
   border-radius: 10px;
 }
 
 .main-Box::-webkit-scrollbar-thumb,
 .table-Body::-webkit-scrollbar-thumb {
   border-radius: 10px;
-  background-color: #f90;
+  background-color: var(--color-no-4);
 }
 
 .main {
@@ -152,9 +163,8 @@ body {
     gap: 1.5rem;
     grid-template-columns: repeat(3, 1fr);
     padding: 0.5rem;
-    background-color: #04423b;
     .item {
-      background-color: #acd1e8;
+      background-color: var(--color-secondary);
       border-radius: 20px;
       // transition: all 0.2s ease-in-out;
       padding: 0.5rem;
@@ -168,21 +178,23 @@ body {
         img {
           width: 100%;
           border-radius: 20px;
-          border-bottom: 2px solid black;
+          border-bottom: var(--border-option);
+          border-top: var(--border-option);
         }
       }
       .name {
         font-size: 1.5rem;
         text-align: center;
-        background-color: palegoldenrod;
+        background-color: var(--color-white);
         border-radius: 20px;
-        color: green;
+        color: var(--color-text);
         // height: 40%;
         transition: all 0.4s ease-in-out;
+        border-bottom: var(--border-option);
         .itemName {
           font-size: 2.5rem;
           text-transform: capitalize;
-          border-top: 2px solid black;
+          border-top: var(--border-option);
           border-radius: 20px;
         }
         .dsInfo {
@@ -248,10 +260,23 @@ body {
     .header {
       width: 90%;
       padding: 1rem 0;
-      background-color: lightblue;
+      background-color: var(--color-no-0);
+      margin: 0.5rem;
+      border-radius: 10px;
       text-align: center;
+      letter-spacing: 0.2rem;
+      h1 {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      h2 {
+        text-transform: uppercase;
+        text-shadow: 1px 1px 1px #000;
+      }
       a {
         text-decoration: none;
+        font-size: larger;
+        color: var(--color-primary);
+        text-decoration: underline;
       }
     }
     .body {
@@ -262,12 +287,17 @@ body {
         width: 85%;
         height: 70vh;
         padding: 0.5rem 0.2rem;
+        background-color: var(--color-secondary);
+        border-radius: 10px;
         table {
           table-layout: fixed;
           width: 100%;
-          color: darkcyan;
+          color: var(--color-text);
+          border-radius: 10px;
+          background-color: var(--color-primary);
+          border: 2px solid var(--color-secondary);
           tr {
-            background-color: lightcyan;
+            background-color: var(--color-white);
             th.questions,
             td.questions {
               width: 82%;
@@ -285,8 +315,10 @@ body {
               width: 3%;
               text-align: center;
               input[type="checkbox"] {
+                accent-color: var(--color-no-4);
                 width: 15px;
                 height: 15px;
+                cursor: pointer;
               }
             }
             th.id,
@@ -299,7 +331,7 @@ body {
               height: 4rem;
               font-size: 1.5rem;
               text-transform: uppercase;
-              color: black;
+              color: var(--color-no-4);
             }
             td {
               padding: 10px;
@@ -328,7 +360,7 @@ body {
   width: 70px;
   height: 70px;
   border-radius: 50%;
-  background-color: var(--color-no-4);
+  background-color: var(--color-no-3);
   cursor: pointer;
   display: flex;
   justify-content: center;
