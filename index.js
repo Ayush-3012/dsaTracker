@@ -43,9 +43,9 @@ async function updateDoneQues(topic, name) {
     if (_.lowerCase(questions[i].topicName) == topic) {
       for (var j = 0; j < questions[i].questions.length; j++) {
         if (questions[i].questions[j].Problem == name) {
-          questions[i].questions[j].Done = questions[i].questions[j].Done
-            ? false
-            : true;
+          if (questions[i].questions[j].Done == "checked")
+            questions[i].questions[j].Done = false;
+          else questions[i].questions[j].Done = "checked";
         }
       }
     }
@@ -61,12 +61,10 @@ app.get("/", (req, res) => {
 });
 
 app.get("/about", async (req, res) => {
-  updateCount();
   res.render("about.ejs");
 });
 
 app.get("/:topic", async (req, res) => {
-  updateCount();
   const requestedDs = _.lowerCase(req.params.topic);
   questions.forEach(function (item) {
     if (_.lowerCase(item.topicName) == requestedDs)
@@ -78,17 +76,16 @@ app.get("/:topic", async (req, res) => {
 
 app.post("/updatedSheet", (req, res) => {
   updateCount();
-  let selectedQuesObj = JSON.parse(req.body.uncheckedQues);
-  if (req.body.checkedQues) {
-    selectedQuesObj = JSON.parse(req.body.checkedQues);
-  }
+  let selectedQuesObj;
+  if (req.body.checkedQues) selectedQuesObj = JSON.parse(req.body.checkedQues);
+  else selectedQuesObj = JSON.parse(req.body.uncheckedQues);
   for (var i = 0; i < dsaTables.length; i++) {
     const currentTable = dsaTables[i];
     if (
       `${currentTable.modelName}` ===
       _.camelCase(_.lowerCase(selectedQuesObj.topic))
     ) {
-      const tableEntry = new dsaTables[i]({
+      const tableEntry = new currentTable({
         name: selectedQuesObj.name,
         link1: selectedQuesObj.link1,
         link2: selectedQuesObj.link2,
@@ -105,19 +102,17 @@ app.post("/updatedSheet", (req, res) => {
           } else {
             currentTable
               .deleteOne({ name: selectedQuesObj.name })
-              .then(function () {})
-              .catch(function (err) {
-                console.log(err);
-              });
+              .then(function () {});
+            updateDoneQues(
+              _.lowerCase(selectedQuesObj.topic),
+              selectedQuesObj.name
+            );
           }
-        })
-        .catch(function (err) {
-          console.log(err);
         });
     }
+    updateCount();
   }
   res.status(204).send();
-  // res.redirect(`/:${_.lowerCase(selectedQuesObj.topic)}`);
 });
 
 app.listen(port, () => {
