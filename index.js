@@ -51,25 +51,37 @@ async function updateDoneQues(topic, name) {
     }
   }
 }
+let darkTheme = false;
+app.post("/toggle-theme", (req, res) => {
+  darkTheme = !darkTheme;
+  res.sendStatus(200);
+});
 
 app.get("/", (req, res) => {
   updateCount();
+  const currentRoute = req.url;
   res.render("index.ejs", {
     data: questions,
     _: _,
+    currentRoute,
+    darkTheme,
   });
 });
 
 app.get("/about", async (req, res) => {
-  res.render("about.ejs");
+  const currentRoute = req.url;
+  res.render("about.ejs", { currentRoute, darkTheme });
 });
 
 app.get("/:topic", async (req, res) => {
   const requestedDs = _.lowerCase(req.params.topic);
+  const currentRoute = "/";
   questions.forEach(function (item) {
     if (_.lowerCase(item.topicName) == requestedDs)
       res.render("sheet.ejs", {
         dataStructure: item,
+        currentRoute,
+        darkTheme,
       });
   });
 });

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
-  <body>
+  <body class="<%=darkTheme ? 'dark-mode' : '' %>">
     <div class="footerDiv">
       <div class="theme-btn">
         <i class="fas fa-adjust"></i>
@@ -13,3 +13,20 @@
     </div>
   </body>
 </html>
+
+<script>
+  const themeButton = document.querySelector(".theme-btn");
+  themeButton.addEventListener("click", () => {
+    // Send a request to the server to toggle the theme
+    fetch("/toggle-theme", { method: "POST" })
+      .then((response) => {
+        if (response.status === 200) {
+          // Reload the page to apply the new theme
+          location.reload();
+        }
+      })
+      .catch((error) => {
+        console.error("An error occurred while toggling theme:", error);
+      });
+  });
+</script>

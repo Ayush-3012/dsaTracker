@@ -5,23 +5,33 @@
   list-style-type: none;
 }
 
+.dark-mode {
+  --color-primary: #283149;
+  --color-secondary: #00818a;
+  --body-color: #5c6973;
+  --color-white: #fff;
+  --color-black: #000;
+  --color-no-0: #8be8e5;
+}
+
 :root {
   --color-primary: #6f61c0;
   --color-secondary: #9c69f5;
+  --body-color: #fff;
   --color-white: #fff;
   --color-black: #000;
   --color-text: #5c6973;
-  --color-no-0: #8be8e5;
+  --color-no-0: #66d5d1;
   --color-no-1: #acd1e8;
   --color-no-2: #b2becd;
   --color-no-3: #5c6973;
   --color-no-4: #343b40;
-  --br-sm-2: 14px;
-  --box-shadow-1: 0 3px 15px rgba(0, 0, 0, 0.3);
+  --box-shadow-1: 0 3px 15px rgba(0, 0, 0);
   --border-option: 0.3rem solid var(--color-no-4);
 }
 
 body {
+  background-color: var(--body-color);
   height: 100vh;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   display: flex;
@@ -35,16 +45,13 @@ body {
   overflow: hidden;
 }
 
-/* REMOV SCROLL, BUT NOT ITS FUNCTIONING */
 .nav {
   display: flex;
   justify-content: center;
   gap: 2rem;
-  max-width: 95%;
   width: 95%;
-  min-width: auto;
   background-color: var(--color-primary);
-  border-radius: 5px;
+  border-radius: 10px;
 }
 .nav .active-btn {
   background-color: var(--color-secondary) !important;
@@ -56,93 +63,147 @@ body {
 .nav .control {
   cursor: pointer;
   transition: all 0.2s ease-in-out;
-  background-color: var(--color-no-3);
-  height: 40px;
-  width: 40px;
+  background-color: var(--color-no-2);
+  height: 45px;
+  width: 45px;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0.3rem 0;
+  margin: 0.5rem 0;
   box-shadow: var(--box-shadow-1);
 }
 .nav .control i {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   color: var(--color-white);
   pointer-events: none;
 }
 .nav .control:hover {
-  transform: scale(1.05);
+  transform: scale(1.2);
   transition: all 0.2s ease-in-out;
 }
 
 .about-Body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  height: 100%;
-  background-color: green;
+  padding: 0.5rem 2.5rem;
 }
 .about-Body .about-Page {
-  background-color: yellowgreen;
-  height: 100%;
+  background-color: var(--body-color);
+  border-radius: 10px;
+  box-shadow: var(--box-shadow-1);
   display: flex;
   flex-direction: column;
+  gap: 1rem;
   align-items: center;
 }
 .about-Body .about-Page h1 {
+  width: 95%;
   text-align: center;
-  width: 100%;
-  border: 2px solid brown;
-  padding: 2rem;
+  color: var(--color-no-0);
+  border-bottom: var(--border-option);
+  border-radius: 10px;
+  letter-spacing: 1rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .about-Body .about-Page .about {
-  width: 80%;
-  background-color: blueviolet;
+  background-color: var(--color-secondary);
   padding: 1rem 3rem;
-  margin: 2rem;
+  margin: 1.2rem 2rem;
   display: flex;
-  justify-content: center;
   flex-direction: column;
-  align-items: center;
-}
-.about-Body .about-Page .about h2 {
-  text-align: center;
-  width: 100%;
-  font-size: 3rem;
-  margin: 1rem;
-  border-bottom: 2px solid;
+  gap: 1rem;
+  box-shadow: var(--box-shadow-1);
+  border-radius: 20px;
 }
 .about-Body .about-Page .about h4 {
+  text-align: justify;
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+  background-color: var(--color-no-0);
+  color: var(--color-no-4);
+  border-bottom: var(--border-option);
+  border-top: var(--border-option);
+  border-radius: 20px;
+}
+.about-Body .about-Page .about h4 a {
+  text-decoration: none;
+  color: var(--color-no-3);
+  font-style: italic;
+}
+.about-Body .about-Page .about h4 a:hover {
+  text-decoration: underline;
+  color: var(--color-no-4);
+}
+.about-Body .about-Page .about h4 a span {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: normal;
+}
+.about-Body .about-Page .aboutCreator {
+  padding: 1rem 3rem;
+  border-radius: 20px;
   text-align: center;
-  width: 80%;
-  font-size: 2rem;
-  background-color: #1bd6bf;
+  width: 100%;
+  color: var(--color-no-4);
+}
+.about-Body .about-Page .aboutCreator h6 {
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+  background-color: var(--color-no-2);
+  border-top-left-radius: 20px;
+}
+.about-Body .about-Page .aboutCreator h6 a {
+  text-decoration: none;
+  color: var(--color-no-3);
+  font-style: italic;
+}
+.about-Body .about-Page .aboutCreator h6 a:hover {
+  text-decoration: underline;
+  color: var(--color-no-4);
+}
+.about-Body .about-Page .aboutCreator p {
+  font-size: 1.5rem;
+  background-color: var(--color-no-2);
+  padding: 1rem 2rem;
+  border-bottom-right-radius: 20px;
+}
+.about-Body .about-Page .aboutCreator p .projectLink {
+  position: absolute;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  right: 100px;
+  text-decoration: none;
+  color: var(--color-white);
+  font-style: italic;
+}
+.about-Body .about-Page .aboutCreator p .projectLink:hover {
+  color: var(--color-no-3);
+  text-decoration: underline;
 }
 
 /* SCROLLING EFFECT */
 .main-Box,
-.table-Body {
+.table-Body,
+.about-Body {
   float: right;
   overflow-y: auto;
   height: 650px;
 }
 
 .main-Box::-webkit-scrollbar,
-.table-Body::-webkit-scrollbar {
+.table-Body::-webkit-scrollbar,
+.about-Body::-webkit-scrollbar {
   width: 15px;
 }
 
 .main-Box::-webkit-scrollbar-track,
-.table-Body::-webkit-scrollbar-track {
+.table-Body::-webkit-scrollbar-track,
+.about-Body::-webkit-scrollbar-track {
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   background-color: var(--color-no-2);
   border-radius: 10px;
 }
 
 .main-Box::-webkit-scrollbar-thumb,
-.table-Body::-webkit-scrollbar-thumb {
+.table-Body::-webkit-scrollbar-thumb,
+.about-Body::-webkit-scrollbar-thumb {
   border-radius: 10px;
   background-color: var(--color-no-4);
 }
@@ -197,6 +258,38 @@ body {
   align-items: flex-start;
   transform: scale(1);
   transition: all 0.4s ease-in-out;
+}
+.main .main-Box .item .name .dsInfo .pgr {
+  width: 100%;
+  position: relative;
+}
+.main .main-Box .item .name .dsInfo .pgr .progress-bar {
+  width: 20vw;
+  height: 6vh;
+}
+.main .main-Box .item .name .dsInfo .pgr .inner-progress {
+  position: absolute;
+  top: 0.9rem;
+  left: 0.3rem;
+  height: 2vh;
+  background-color: var(--color-secondary);
+  border-radius: 5px;
+  animation: innerProgressBarAnimation 1s ease-in-out forwards;
+}
+.main .main-Box .item .name .dsInfo .pgr .inner-progress .percentValue {
+  position: absolute;
+  bottom: -0.2rem;
+  right: 0;
+  color: black;
+  font-size: 1.2rem;
+}
+@keyframes innerProgressBarAnimation {
+  from {
+    width: 0;
+  }
+  to {
+    width: var(--percentQuesDone);
+  }
 }
 .main .main-Box .item .name .dsDef {
   transform: scale(0);
@@ -262,6 +355,11 @@ body {
   text-decoration: none;
   font-size: larger;
   color: var(--color-primary);
+  cursor: pointer;
+  font-style: italic;
+}
+.sheet-Main .sheet-Main-Box .header a:hover {
+  color: var(--color-secondary);
   text-decoration: underline;
 }
 .sheet-Main .sheet-Main-Box .body {
@@ -285,7 +383,7 @@ body {
   border: 2px solid var(--color-secondary);
 }
 .sheet-Main .sheet-Main-Box .body .table-Body table tr {
-  background-color: var(--color-white);
+  background-color: white;
 }
 .sheet-Main .sheet-Main-Box .body .table-Body table tr th.questions,
 .sheet-Main .sheet-Main-Box .body .table-Body table tr td.questions {
@@ -345,12 +443,12 @@ body {
   width: 70px;
   height: 70px;
   border-radius: 50%;
-  background-color: var(--color-no-3);
+  background-color: var(--color-no-4);
   cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.3);
+  box-shadow: var(--box-shadow-1);
   transition: all 0.1s ease-in-out;
 }
 .theme-btn:active {
