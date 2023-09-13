@@ -1,6 +1,7 @@
 import express from "express";
 import bodyParser from "body-parser";
 import questions from "./questions.js";
+import product from "./api/products.js"
 import _ from "lodash";
 import mongoose from "mongoose";
 
@@ -9,6 +10,7 @@ const port = 3000;
 
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({ extended: true }));
+app.use("/api/products.js", product)
 // mongoose.connect("mongodb://127.0.0.1:27017/dsaTrackerDB");
 mongoose.connect(
   "mongodb+srv://Ayush-3012:Champ%403012@cluster0.veabqcp.mongodb.net/dsaTrackerDB"
