@@ -9,7 +9,10 @@ const port = 3000;
 
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({ extended: true }));
-mongoose.connect("mongodb://127.0.0.1:27017/dsaTrackerDB");
+// mongoose.connect("mongodb://127.0.0.1:27017/dsaTrackerDB");
+mongoose.connect(
+  "mongodb+srv://Ayush-3012:Champ%403012@cluster0.veabqcp.mongodb.net/dsaTrackerDB"
+);
 
 const compQueSchema = {
   name: String,
