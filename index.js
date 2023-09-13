@@ -38,19 +38,49 @@ async function updateCount() {
   }
 }
 
-async function updateDoneQues(topic, name) {
+async function updateCheckbox(topic, name) {
   for (var i = 0; i < dsaTables.length; i++) {
     if (_.lowerCase(questions[i].topicName) == topic) {
       for (var j = 0; j < questions[i].questions.length; j++) {
         if (questions[i].questions[j].Problem == name) {
-          if (questions[i].questions[j].Done == "checked")
-            questions[i].questions[j].Done = false;
-          else questions[i].questions[j].Done = "checked";
+          questions[i].questions[j].Done = "checked";
         }
       }
     }
   }
 }
+
+async function resetCheckbox(topic, name) {
+  for (var i = 0; i < dsaTables.length; i++) {
+    if (_.lowerCase(questions[i].topicName) == topic) {
+      for (var j = 0; j < questions[i].questions.length; j++) {
+        if (questions[i].questions[j].Problem == name) {
+          questions[i].questions[j].Done = false;
+        }
+      }
+    }
+  }
+}
+
+async function updateDoneQues() {
+  for (var i = 0; i < dsaTables.length; i++) {
+    const currentTable = dsaTables[i];
+    try {
+      const foundInDb = await currentTable.find();
+      if (foundInDb.length != 0) {
+        for (let j = 0; j < foundInDb.length; j++) {
+          updateCheckbox(currentTable.modelName, foundInDb[j].name);
+        }
+      }
+    } catch (error) {
+      console.error("Error:", error);
+    }
+  }
+}
+
+updateCount();
+updateDoneQues();
+
 let darkTheme = false;
 app.post("/toggle-theme", (req, res) => {
   darkTheme = !darkTheme;
@@ -59,6 +89,7 @@ app.post("/toggle-theme", (req, res) => {
 
 app.get("/", (req, res) => {
   updateCount();
+  updateDoneQues();
   const currentRoute = req.url;
   res.render("index.ejs", {
     data: questions,
@@ -74,6 +105,7 @@ app.get("/about", async (req, res) => {
 });
 
 app.get("/:topic", async (req, res) => {
+  updateDoneQues();
   const requestedDs = _.lowerCase(req.params.topic);
   const currentRoute = "/";
   questions.forEach(function (item) {
@@ -107,22 +139,20 @@ app.post("/updatedSheet", (req, res) => {
         .then(function (foundQuestion) {
           if (!foundQuestion) {
             tableEntry.save();
-            updateDoneQues(
-              _.lowerCase(selectedQuesObj.topic),
-              selectedQuesObj.name
-            );
           } else {
             currentTable
               .deleteOne({ name: selectedQuesObj.name })
-              .then(function () {});
-            updateDoneQues(
-              _.lowerCase(selectedQuesObj.topic),
-              selectedQuesObj.name
-            );
+              .then(function () {
+                resetCheckbox(
+                  _.lowerCase(selectedQuesObj.topic),
+                  selectedQuesObj.name
+                );
+              });
           }
         });
     }
     updateCount();
+    updateDoneQues();
   }
   res.status(204).send();
 });
