@@ -5,13 +5,17 @@ import _ from "lodash";
 import mongoose from "mongoose";
 
 const app = express();
-const port = 3000 || `process.env.PORT`;
+const port = 3000;
 
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({ extended: true }));
-mongoose.connect(
-  "mongodb+srv://Ayush-3012:Champ%403012@cluster0.veabqcp.mongodb.net/dsaTrackerDB"
-);
+async function run() {
+  await mongoose.connect("mongodb+srv://Ayush-3012:Champ%403012@cluster0.veabqcp.mongodb.net/dsaTrackerDB"),{
+    socketTimeoutMS: 30000,
+  };
+}
+
+run();
 
 const compQueSchema = {
   name: String,
@@ -33,9 +37,7 @@ async function updateCount() {
       `${dsaTables[i].modelName}` ===
       _.camelCase(_.lowerCase(questions[i].topicName))
     ) {
-      questions[i].doneQuestions = await dsaTables[i]
-        .count()
-        .then((cnt) => cnt);
+      questions[i].doneQuestions = await dsaTables[i].count().then((cnt) => cnt);
     }
   }
 }
@@ -80,9 +82,6 @@ async function updateDoneQues() {
   }
 }
 
-updateCount();
-updateDoneQues();
-
 let darkTheme = false;
 app.post("/toggle-theme", (req, res) => {
   darkTheme = !darkTheme;
@@ -93,7 +92,7 @@ app.get("/", (req, res) => {
   updateCount();
   updateDoneQues();
   const currentRoute = req.url;
-  res.render("./public/views/index.ejs", {
+  res.render("index.ejs", {
     data: questions,
     _: _,
     currentRoute,
@@ -103,7 +102,7 @@ app.get("/", (req, res) => {
 
 app.get("/about", async (req, res) => {
   const currentRoute = req.url;
-  res.render("./public/views/about.ejs", { currentRoute, darkTheme });
+  res.render("about.ejs", { currentRoute, darkTheme });
 });
 
 app.get("/:topic", async (req, res) => {
@@ -112,7 +111,7 @@ app.get("/:topic", async (req, res) => {
   const currentRoute = "/";
   questions.forEach(function (item) {
     if (_.lowerCase(item.topicName) == requestedDs)
-      res.render("./public/views/sheet.ejs", {
+      res.render("sheet.ejs", {
         dataStructure: item,
         currentRoute,
         darkTheme,
