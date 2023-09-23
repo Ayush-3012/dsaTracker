@@ -5,26 +5,41 @@ import _ from "lodash";
 import mongoose from "mongoose";
 import { dirname } from "path";
 import { fileURLToPath } from "url";
+import { MongoClient, ServerApiVersion } from "mongodb";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const app = express();
 const port = 3000;
+const uri =
+  "mongodb+srv://Ayush-3012:Champ%403012@cluster0.veabqcp.mongodb.net/dsaTrackerDB";
 
 app.set("view engine", "ejs");
 app.set("views", __dirname + "/views");
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({ extended: true }));
 
+const client = new MongoClient(uri, {
+  serverApi: {
+    version: ServerApiVersion.v1,
+    strict: true,
+    deprecationErrors: true,
+  },
+});
 async function run() {
-  await mongoose.connect(
-    "mongodb+srv://Ayush-3012:Champ%403012@cluster0.veabqcp.mongodb.net/dsaTrackerDB"
-  ),
-    {
-      socketTimeoutMS: 30000,
-    };
+  try {
+    // Connect the client to the server	(optional starting in v4.7)
+    await client.connect();
+    // Send a ping to confirm a successful connection
+    await client.db("admin").command({ ping: 1 });
+    console.log(
+      "Pinged your deployment. You successfully connected to MongoDB!"
+    );
+  } finally {
+    // Ensures that the client will close when you finish/error
+    await client.close();
+  }
 }
-
-run();
+run().catch(console.dir);
 
 const compQueSchema = {
   name: String,
