@@ -100,7 +100,7 @@ app.get("/", (req, res) => {
   updateCount();
   updateDoneQues();
   const currentRoute = req.url;
-  res.render("index.ejs", {
+  res.render("index", {
     data: questions,
     _: _,
     currentRoute,
@@ -110,7 +110,7 @@ app.get("/", (req, res) => {
 
 app.get("/about", async (req, res) => {
   const currentRoute = req.url;
-  res.render("about.ejs", { currentRoute, darkTheme });
+  res.render("about", { currentRoute, darkTheme });
 });
 
 app.get("/:topic", async (req, res) => {
@@ -119,7 +119,7 @@ app.get("/:topic", async (req, res) => {
   const currentRoute = "/";
   questions.forEach(function (item) {
     if (_.lowerCase(item.topicName) == requestedDs)
-      res.render("sheet.ejs", {
+      res.render("sheet", {
         dataStructure: item,
         currentRoute,
         darkTheme,
