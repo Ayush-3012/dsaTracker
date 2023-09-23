@@ -9,10 +9,15 @@ const port = 3000;
 
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({ extended: true }));
+app.set("view engine", "ejs");
+app.engine("ejs", require("ejs").__express);
 async function run() {
-  await mongoose.connect("mongodb+srv://Ayush-3012:Champ%403012@cluster0.veabqcp.mongodb.net/dsaTrackerDB"),{
-    socketTimeoutMS: 30000,
-  };
+  await mongoose.connect(
+    "mongodb+srv://Ayush-3012:Champ%403012@cluster0.veabqcp.mongodb.net/dsaTrackerDB"
+  ),
+    {
+      socketTimeoutMS: 30000,
+    };
 }
 
 run();
@@ -37,7 +42,9 @@ async function updateCount() {
       `${dsaTables[i].modelName}` ===
       _.camelCase(_.lowerCase(questions[i].topicName))
     ) {
-      questions[i].doneQuestions = await dsaTables[i].count().then((cnt) => cnt);
+      questions[i].doneQuestions = await dsaTables[i]
+        .count()
+        .then((cnt) => cnt);
     }
   }
 }
