@@ -3,8 +3,7 @@ import bodyParser from "body-parser";
 import questions from "./questions.js";
 import _ from "lodash";
 import mongoose from "mongoose";
-import { fileURLToPath } from "url";
-import { dirname } from "path";
+import { __dirname } from "path";
 
 const app = express();
 const port = 3000;
