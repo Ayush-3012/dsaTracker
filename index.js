@@ -7,9 +7,11 @@ import mongoose from "mongoose";
 const app = express();
 const port = 3000;
 
-app.use(express.static("public"));
-app.use(bodyParser.urlencoded({ extended: true }));
+app.set("views", __dirname + "/views");
 app.set("view engine", "ejs");
+app.use(express.static(__dirname + "public"));
+app.use(bodyParser.urlencoded({ extended: true }));
+
 async function run() {
   await mongoose.connect(
     "mongodb+srv://Ayush-3012:Champ%403012@cluster0.veabqcp.mongodb.net/dsaTrackerDB"
