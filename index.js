@@ -3,14 +3,14 @@ import bodyParser from "body-parser";
 import questions from "./questions.js";
 import _ from "lodash";
 import mongoose from "mongoose";
-import { __dirname } from "path";
 
 const app = express();
 const port = 3000;
 
-app.set("views", __dirname + "/views");
+// app.set("views", __dirname + "/views");
 app.set("view engine", "ejs");
-app.use(express.static(__dirname + "public"));
+// app.use(express.static(__dirname + "public"));
+app.use(express.static("public"));
 app.use(bodyParser.urlencoded({ extended: true }));
 
 async function run() {
