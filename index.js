@@ -17,7 +17,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 async function run() {
   await mongoose.connect(
-    "mongodb+srv://Ayush-3012:Champ%403012@cluster0.veabqcp.mongodb.net/dsaTrackerDB"
+    "mongodb+srv://Ayush-3012:Champ%403012@cluster0.veabqcp.mongodb.net/dsaTrackerDB?serverSelectionTimeoutMS=60000&readPreference=secondaryPreferred"
   ),
     {
       socketTimeoutMS: 1000,
