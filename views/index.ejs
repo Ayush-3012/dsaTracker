@@ -2,7 +2,7 @@
 
 <div class="main">
   <div class="main-Box">
-    <% data.forEach(item => { %> <% let itemName = _.lowerCase(item.topicName)
+    <% data.forEach(item => { %> <% let itemName = item.topicName
     %>
     <div class="item">
       <a href="/<%=itemName %>">
@@ -23,8 +23,13 @@
               <p class="progress">Done: <%= item.doneQuestions%></p>
               <div class="pgr">
                 <progress class="progress-bar" value="0"></progress>
-                <div style="--percentQuesDone: <%= (percentQuesDone) %>%;" class="inner-progress">
-                  <span class="percentValue"><%=Math.trunc(percentQuesDone)%>%</span>
+                <div
+                  style="--percentQuesDone: <%= (percentQuesDone) %>%"
+                  class="inner-progress"
+                >
+                  <span class="percentValue"
+                    ><%=Math.trunc(percentQuesDone)%>%</span
+                  >
                 </div>
               </div>
               <% }else { %>

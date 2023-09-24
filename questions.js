@@ -853,7 +853,7 @@ export default [
     ],
   },
   {
-    topicName: "Search & Sort",
+    topicName: "Search Sort",
     position: 3,
     started: false,
     doneQuestions: 0,
@@ -861,7 +861,7 @@ export default [
       "Approx 43 different sorting algorithms. Quick sort, Merge Sort, Shell sort, Bubble Sort, Pigeonhole sort, Heap Sort, Count sort, Radix sort, and many more.",
     questions: [
       {
-        Topic: "Search & Sort",
+        Topic: "Search Sort",
         Problem:
           "Find first and last positions of an element in a sorted array",
         Done: false,
@@ -871,7 +871,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/first-and-last-position-of-an-element-in-sorted-array_1082549?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "Search & Sort",
+        Topic: "Search Sort",
         Problem: "Find a Fixed Point (Value equal to index) in a given array",
         Done: false,
         Bookmark: false,
@@ -880,7 +880,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/value-equal-to-the-index-value_1115771?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "Search & Sort",
+        Topic: "Search Sort",
         Problem: "Search in a rotated sorted array",
         Done: false,
         Bookmark: false,
@@ -889,7 +889,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/search-in-rotated-sorted-array_1082554?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "Search & Sort",
+        Topic: "Search Sort",
         Problem: "square root of an integer",
         Done: false,
         Bookmark: false,
@@ -898,7 +898,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/square-root-integral_893351?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "Search & Sort",
+        Topic: "Search Sort",
         Problem:
           "Maximum and minimum of an array using minimum number of comparisons",
         Done: false,
@@ -908,7 +908,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/middle-of-three_1118283?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "Search & Sort",
+        Topic: "Search Sort",
         Problem: "Optimum location of point to minimize total distance",
         Done: false,
         Bookmark: false,
@@ -917,7 +917,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/optimum-location_1116097?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "Search & Sort",
+        Topic: "Search Sort",
         Problem: "Find the repeating and the missing",
         Done: false,
         Bookmark: false,
@@ -926,7 +926,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/find-the-repeating-and-missing-number_1062727?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "Search & Sort",
+        Topic: "Search Sort",
         Problem: "find majority element",
         Done: false,
         Bookmark: false,
@@ -935,7 +935,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/majority-element_842495?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "Search & Sort",
+        Topic: "Search Sort",
         Problem: "Searching in an array where adjacent differ by at most k",
         Done: false,
         Bookmark: false,
@@ -944,7 +944,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/find-student_3161883?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "Search & Sort",
+        Topic: "Search Sort",
         Problem: "find a pair with a given difference",
         Done: false,
         Bookmark: false,
@@ -953,7 +953,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/pair-difference-k_1089634?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "Search & Sort",
+        Topic: "Search Sort",
         Problem: "find four elements that sum to a given value",
         Done: false,
         Bookmark: false,
@@ -962,7 +962,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/find-four-elements-that-sums-to-a-given-value_983605?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "Search & Sort",
+        Topic: "Search Sort",
         Problem: "maximum sum such that no 2 elements are adjacent",
         Done: false,
         Bookmark: false,
@@ -971,7 +971,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/is-it-a-tree_630511?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "Search & Sort",
+        Topic: "Search Sort",
         Problem: "Count triplet with sum smaller than a given value",
         Done: false,
         Bookmark: false,
@@ -980,7 +980,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/3-sum-smaller_3161884?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "Search & Sort",
+        Topic: "Search Sort",
         Problem: "merge 2 sorted arrays",
         Done: false,
         Bookmark: false,
@@ -989,7 +989,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/ninja-and-sorted-arrays_1214628?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "Search & Sort",
+        Topic: "Search Sort",
         Problem: "print all subarrays with 0 sum",
         Done: false,
         Bookmark: false,
@@ -998,7 +998,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/subarrays-with-zero-sum_3161876?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "Search & Sort",
+        Topic: "Search Sort",
         Problem: "Product array Puzzle",
         Done: false,
         Bookmark: false,
@@ -1007,7 +1007,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/product-of-array-except-self_630271?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "Search & Sort",
+        Topic: "Search Sort",
         Problem: "Sort array according to count of set bits",
         Done: false,
         Bookmark: false,
@@ -1016,7 +1016,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/sort-an-array-according-to-the-count-of-set-bits_873142?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "Search & Sort",
+        Topic: "Search Sort",
         Problem: "minimum no. of swaps required to sort the array",
         Done: false,
         Bookmark: false,
@@ -1025,7 +1025,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/minimum-swaps-to-sort-array_1806885?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "Search & Sort",
+        Topic: "Search Sort",
         Problem: "Bishu and Soldiers",
         Done: false,
         Bookmark: false,
@@ -1034,7 +1034,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/search-in-the-array_1116099?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "Search & Sort",
+        Topic: "Search Sort",
         Problem: "Rasta and Kheshtak",
         Done: false,
         Bookmark: false,
@@ -1043,7 +1043,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/ninja-and-his-sword_1164268?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "Search & Sort",
+        Topic: "Search Sort",
         Problem: "Kth smallest number again",
         Done: false,
         Bookmark: false,
@@ -1052,7 +1052,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/kth-smallest-integer-in-ranges_1115609?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "Search & Sort",
+        Topic: "Search Sort",
         Problem: "Find pivot element in a sorted array",
         Done: false,
         Bookmark: false,
@@ -1061,7 +1061,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/game-of-largest-element_1170064?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "Search & Sort",
+        Topic: "Search Sort",
         Problem: "K-th Element of Two Sorted Arrays",
         Done: false,
         Bookmark: false,
@@ -1070,7 +1070,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/k-th-element-of-2-sorted-array_1164159?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "Search & Sort",
+        Topic: "Search Sort",
         Problem: "Aggressive cows",
         Done: false,
         Bookmark: false,
@@ -1079,7 +1079,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/chess-tournament_981299?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "Search & Sort",
+        Topic: "Search Sort",
         Problem: "Book Allocation Problem",
         Done: false,
         Bookmark: false,
@@ -1088,7 +1088,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/ayush-gives-ninjatest_1097574?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "Search & Sort",
+        Topic: "Search Sort",
         Problem: "EKOSPOJ:",
         Done: false,
         Bookmark: false,
@@ -1097,7 +1097,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/kevin-and-his-fruits_1164267?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "Search & Sort",
+        Topic: "Search Sort",
         Problem: "Job Scheduling Algo",
         Done: false,
         Bookmark: false,
@@ -1106,7 +1106,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/weighted-job-scheduling_1094885?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "Search & Sort",
+        Topic: "Search Sort",
         Problem: "Missing Number in AP",
         Done: false,
         Bookmark: false,
@@ -1115,7 +1115,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/missing-number-in-ap_975498?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "Search & Sort",
+        Topic: "Search Sort",
         Problem: "Smallest number with atleastn trailing zeroes infactorial",
         Done: false,
         Bookmark: false,
@@ -1124,7 +1124,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/smallest-number-with-at-least-n-trailing-zeros-in-factorial_1115774?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "Search & Sort",
+        Topic: "Search Sort",
         Problem: "Painters Partition Problem:",
         Done: false,
         Bookmark: false,
@@ -1133,7 +1133,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/painter-s-partition-problem_1089557?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "Search & Sort",
+        Topic: "Search Sort",
         Problem: "ROTI-Prata SPOJ",
         Done: false,
         Bookmark: false,
@@ -1142,7 +1142,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/cooking-ninjas_1164174?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "Search & Sort",
+        Topic: "Search Sort",
         Problem: "DoubleHelix SPOJ",
         Done: false,
         Bookmark: false,
@@ -1151,7 +1151,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/maximize-the-sum_1118624?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "Search & Sort",
+        Topic: "Search Sort",
         Problem: "Subset Sums",
         Done: false,
         Bookmark: false,
@@ -1160,7 +1160,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/city-of-happy-people_1199336?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "Search & Sort",
+        Topic: "Search Sort",
         Problem: "Find the inversion count",
         Done: false,
         Bookmark: false,
@@ -1169,7 +1169,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/equal-global-and-local-inversions_1463976?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "Search & Sort",
+        Topic: "Search Sort",
         Problem: "Implement Merge-sort in-place",
         Done: false,
         Bookmark: false,
@@ -1178,7 +1178,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/merge-sort-in-place_1118623?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "Search & Sort",
+        Topic: "Search Sort",
         Problem: "Partitioning and Sorting Arrays with Many Repeated Entries",
         Done: false,
         Bookmark: false,
@@ -2583,7 +2583,7 @@ export default [
     ],
   },
   {
-    topicName: "Stacks & Queues",
+    topicName: "stacks queues",
     position: 9,
     started: false,
     doneQuestions: 0,
@@ -2591,7 +2591,7 @@ export default [
       "A stack is a linear data structure that follows a particular order in which the operations are performed. The order may be LIFO(Last In First Out) or FILO(First In Last Out), A Queue is defined as a linear data structure that is open at both ends and the operations are performed in First In First Out (FIFO) order.",
     questions: [
       {
-        Topic: "Stacks & Queues",
+        Topic: "stacks queues",
         Problem: " Implement Stack from Scratch",
         Done: false,
         Bookmark: false,
@@ -2600,7 +2600,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/stack-implementation-using-array_3210209?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "Stacks & Queues",
+        Topic: "stacks queues",
         Problem: " Implement Queue from Scratch",
         Done: false,
         Bookmark: false,
@@ -2609,7 +2609,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/queue-using-array-or-singly-linked-list_2099908?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "Stacks & Queues",
+        Topic: "stacks queues",
         Problem: "Implement 2 stack in an array",
         Done: false,
         Bookmark: false,
@@ -2618,7 +2618,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/two-stacks_983634?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "Stacks & Queues",
+        Topic: "stacks queues",
         Problem: "find the middle element of a stack",
         Done: false,
         Bookmark: false,
@@ -2627,7 +2627,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/delete-middle-element-from-stack_985246?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "Stacks & Queues",
+        Topic: "stacks queues",
         Problem: 'Implement "N" stacks in an Array',
         Done: false,
         Bookmark: false,
@@ -2636,7 +2636,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/n-stacks-in-an-array_1164271?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "Stacks & Queues",
+        Topic: "stacks queues",
         Problem:
           "Check the expression has valid or Balanced parenthesis or not.",
         Done: false,
@@ -2646,7 +2646,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/kevin-s-stack-problem_1169465?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "Stacks & Queues",
+        Topic: "stacks queues",
         Problem: "Reverse a String using Stack",
         Done: false,
         Bookmark: false,
@@ -2655,7 +2655,7 @@ export default [
         URL2: "",
       },
       {
-        Topic: "Stacks & Queues",
+        Topic: "stacks queues",
         Problem:
           "Design a Stack that supports getMin() in O(1) time and O(1) extra space.",
         Done: false,
@@ -2665,7 +2665,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/design-a-stack-that-supports-getmin-in-o-1-time-and-o-1-extra-space_842465?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "Stacks & Queues",
+        Topic: "stacks queues",
         Problem: "Find the next Greater element",
         Done: false,
         Bookmark: false,
@@ -2674,7 +2674,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/next-greater-element_670312?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "Stacks & Queues",
+        Topic: "stacks queues",
         Problem: "The celebrity Problem",
         Done: false,
         Bookmark: false,
@@ -2683,7 +2683,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/the-celebrity-problem_982769?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "Stacks & Queues",
+        Topic: "stacks queues",
         Problem: "Arithmetic Expression evaluation",
         Done: false,
         Bookmark: false,
@@ -2692,7 +2692,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/arithmetic-expression-evaluation_1170517?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "Stacks & Queues",
+        Topic: "stacks queues",
         Problem: "Evaluation of Postfix expression",
         Done: false,
         Bookmark: false,
@@ -2701,7 +2701,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/evaluation-of-postfix-expression_841358?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "Stacks & Queues",
+        Topic: "stacks queues",
         Problem:
           "Implement a method to insert an element at its bottom without using any other data structure.",
         Done: false,
@@ -2711,7 +2711,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/insert-an-element-at-its-bottom-in-a-given-stack_1171166?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "Stacks & Queues",
+        Topic: "stacks queues",
         Problem: "Reverse a stack using recursion",
         Done: false,
         Bookmark: false,
@@ -2720,7 +2720,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/reverse-stack-using-recursion_631875?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "Stacks & Queues",
+        Topic: "stacks queues",
         Problem: "Sort a Stack using recursion",
         Done: false,
         Bookmark: false,
@@ -2729,7 +2729,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/sort-a-stack_985275?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "Stacks & Queues",
+        Topic: "stacks queues",
         Problem: "Merge Overlapping Intervals",
         Done: false,
         Bookmark: false,
@@ -2738,7 +2738,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/merge-overlapping-intervals_1082151?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "Stacks & Queues",
+        Topic: "stacks queues",
         Problem: "Largest rectangular Area in Histogram",
         Done: false,
         Bookmark: false,
@@ -2747,7 +2747,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/largest-rectangle-in-a-histogram_1058184?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "Stacks & Queues",
+        Topic: "stacks queues",
         Problem: "Length of the Longest Valid Substring",
         Done: false,
         Bookmark: false,
@@ -2756,7 +2756,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/valid-substring_1172217?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "Stacks & Queues",
+        Topic: "stacks queues",
         Problem: "Expression contains redundant bracket or not",
         Done: false,
         Bookmark: false,
@@ -2765,7 +2765,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/ninja-and-a-complex-expression_1170758?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "Stacks & Queues",
+        Topic: "stacks queues",
         Problem: "Implement Stack using Queue",
         Done: false,
         Bookmark: false,
@@ -2774,7 +2774,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/stack-using-queue_795152?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "Stacks & Queues",
+        Topic: "stacks queues",
         Problem: "Implement Stack using Deque",
         Done: false,
         Bookmark: false,
@@ -2783,7 +2783,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/stack-using-deque_1170512?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "Stacks & Queues",
+        Topic: "stacks queues",
         Problem:
           "Stack Permutations (Check if an array is stack permutation of other)",
         Done: false,
@@ -2793,7 +2793,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/valid-stack-permutation_1170061?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "Stacks & Queues",
+        Topic: "stacks queues",
         Problem: "Implement Queue using Stack  ",
         Done: false,
         Bookmark: false,
@@ -2802,7 +2802,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/queue-using-two-stacks_1170062?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "Stacks & Queues",
+        Topic: "stacks queues",
         Problem: 'Implement "n" queue in an array',
         Done: false,
         Bookmark: false,
@@ -2811,7 +2811,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/n-queue-using-array_1170053?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "Stacks & Queues",
+        Topic: "stacks queues",
         Problem: "Implement a Circular queue",
         Done: false,
         Bookmark: false,
@@ -2820,7 +2820,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/circular-queue_1170058?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "Stacks & Queues",
+        Topic: "stacks queues",
         Problem: "LRU Cache Implementationa",
         Done: false,
         Bookmark: false,
@@ -2829,7 +2829,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/lru-cache-implementation_670276?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "Stacks & Queues",
+        Topic: "stacks queues",
         Problem: "Reverse a Queue using recursion",
         Done: false,
         Bookmark: false,
@@ -2838,7 +2838,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/reversing-queue_1170046?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "Stacks & Queues",
+        Topic: "stacks queues",
         Problem: "Reverse the first “K” elements of a queue",
         Done: false,
         Bookmark: false,
@@ -2847,7 +2847,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/reverse-the-first-k-elements-of-a-queue_1164269?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "Stacks & Queues",
+        Topic: "stacks queues",
         Problem: "Interleave the first half of the queue with second half",
         Done: false,
         Bookmark: false,
@@ -2856,7 +2856,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/interleave-the-first-half-of-the-queue-with-the-second-half_1169450?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "Stacks & Queues",
+        Topic: "stacks queues",
         Problem: "Find the first circular tour that visits all Petrol Pumps",
         Done: false,
         Bookmark: false,
@@ -2865,7 +2865,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/find-the-first-circular-tour-that-visits-all-the-petrol-pumps_799923?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "Stacks & Queues",
+        Topic: "stacks queues",
         Problem: "Minimum time required to rot all oranges",
         Done: false,
         Bookmark: false,
@@ -2874,7 +2874,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/rotting-oranges_701655?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "Stacks & Queues",
+        Topic: "stacks queues",
         Problem: "Distance of nearest cell having 1 in a binary matrix",
         Done: false,
         Bookmark: false,
@@ -2883,7 +2883,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/distance-of-nearest-cell-having-1-in-a-binary-matrix_1169913?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "Stacks & Queues",
+        Topic: "stacks queues",
         Problem: "First negative integer in every window of size “k”",
         Done: false,
         Bookmark: false,
@@ -2892,7 +2892,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/first-negative-integer-in-every-window-of-size-k_1164406?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "Stacks & Queues",
+        Topic: "stacks queues",
         Problem: "Check if all levels of two trees are anagrams or not.",
         Done: false,
         Bookmark: false,
@@ -2901,7 +2901,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/check-if-all-levels-of-two-trees-are-anagrams-of-each-other-not_1214546?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "Stacks & Queues",
+        Topic: "stacks queues",
         Problem:
           "Sum of minimum and maximum elements of all subarrays of size “k”.",
         Done: false,
@@ -2911,7 +2911,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/sum-of-minimum-and-maximum-elements-of-all-subarrays-of-size-k_1171047?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "Stacks & Queues",
+        Topic: "stacks queues",
         Problem:
           "Minimum sum of squares of character counts in a given string after removing “k” characters.",
         Done: false,
@@ -2921,7 +2921,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/minimum-sum-of-squares_1170763?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "Stacks & Queues",
+        Topic: "stacks queues",
         Problem:
           "Queue based approach or first non-repeating character in a stream.",
         Done: false,
@@ -2931,7 +2931,7 @@ export default [
         URL2: "https://www.codingninjas.com/codestudio/problems/first-unique-character-in-a-string_982933?topList=love-babbar-dsa-sheet-problems",
       },
       {
-        Topic: "Stacks & Queues",
+        Topic: "stacks queues",
         Problem: "Next Smaller Element",
         Done: false,
         Bookmark: false,
