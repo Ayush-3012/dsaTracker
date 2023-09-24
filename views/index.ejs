@@ -2,7 +2,7 @@
 
 <div class="main">
   <div class="main-Box">
-    <% data.forEach(item => { %> <% let itemName = item.topicName
+    <% data.forEach(item => { %> <% let itemName = _.lowerCase(item.topicName)
     %>
     <div class="item">
       <a href="/<%=itemName %>">
