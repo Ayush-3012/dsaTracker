@@ -28,14 +28,14 @@
                 <input
                   type="checkbox"
                   name="checkedQues"
-                  value="<%= JSON.stringify({ topic: item.Topic, name: item.Problem, link1: item.URL, link2: item.URL2}) %>"
+                  value="<%= JSON.stringify({ item }) %>"
                   onchange="this.form.submit()"
                   <%=item.Done%>
                 />
                 <input
                   type="hidden"
                   name="uncheckedQues"
-                  value="<%= JSON.stringify({ topic: item.Topic, name: item.Problem, link1: item.URL, link2: item.URL2}) %>"
+                  value="<%= JSON.stringify({ item }) %>"
                   onchange="this.form.submit()"
                   <%=item.Done%>
                 />

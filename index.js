@@ -3,49 +3,28 @@ import bodyParser from "body-parser";
 import questions from "./questions.js";
 import _ from "lodash";
 import mongoose from "mongoose";
-import { dirname } from "path";
-import { fileURLToPath } from "url";
-import { MongoClient, ServerApiVersion } from "mongodb";
 
-const __dirname = dirname(fileURLToPath(import.meta.url));
 const app = express();
 const port = 3000;
-const uri =
-  "mongodb+srv://Ayush-3012:Champ%403012@cluster0.veabqcp.mongodb.net/dsaTrackerDB";
 
-app.set("view engine", "ejs");
-app.set("views", __dirname + "/views");
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({ extended: true }));
-
-const client = new MongoClient(uri, {
-  serverApi: {
-    version: ServerApiVersion.v1,
-    strict: true,
-    deprecationErrors: true,
-  },
-});
 async function run() {
-  try {
-    // Connect the client to the server	(optional starting in v4.7)
-    await client.connect();
-    // Send a ping to confirm a successful connection
-    await client.db("admin").command({ ping: 1 });
-    console.log(
-      "Pinged your deployment. You successfully connected to MongoDB!"
-    );
-  } finally {
-    // Ensures that the client will close when you finish/error
-    await client.close();
-  }
+  await mongoose.connect(
+    // "mongodb+srv://Ayush-3012:Champ%403012@cluster0.veabqcp.mongodb.net/dsaTrackerDB"
+    "mongodb://127.0.0.1:27017/dsaTrackerDB"
+  ),
+    {
+      socketTimeoutMS: 1000,
+    };
 }
-run().catch(console.dir);
+
+run();
 
 const compQueSchema = {
   name: String,
   link1: String,
   link2: String,
-  checked: Boolean,
 };
 
 const dsaTables = [];
@@ -55,13 +34,10 @@ questions.forEach(function (item) {
   );
 });
 
-async function updateCount() {
+async function updateCount(currentTable) {
   for (var i = 0; i < dsaTables.length; i++) {
-    if (
-      `${dsaTables[i].modelName}` ===
-      _.camelCase(_.lowerCase(questions[i].topicName))
-    ) {
-      questions[i].doneQuestions = await dsaTables[i]
+    if (currentTable.modelName == _.lowerCase(questions[i].topicName)) {
+      questions[i].doneQuestions = await currentTable
         .count()
         .then((cnt) => cnt);
     }
@@ -82,7 +58,7 @@ async function updateCheckbox(topic, name) {
 
 async function resetCheckbox(topic, name) {
   for (var i = 0; i < dsaTables.length; i++) {
-    if (_.lowerCase(questions[i].topicName) == topic) {
+    if (questions[i].topicName == topic) {
       for (var j = 0; j < questions[i].questions.length; j++) {
         if (questions[i].questions[j].Problem == name) {
           questions[i].questions[j].Done = false;
@@ -92,20 +68,12 @@ async function resetCheckbox(topic, name) {
   }
 }
 
-async function updateDoneQues() {
-  for (var i = 0; i < dsaTables.length; i++) {
-    const currentTable = dsaTables[i];
-    try {
-      const foundInDb = await currentTable.find();
-      if (foundInDb.length != 0) {
-        for (let j = 0; j < foundInDb.length; j++) {
-          updateCheckbox(currentTable.modelName, foundInDb[j].name);
-        }
-      }
-    } catch (error) {
-      console.error("Error:", error);
-    }
-  }
+async function updateDoneQues(currentTable) {
+  await currentTable.find().then(function (foundInDb) {
+    foundInDb.forEach(function (item) {
+      updateCheckbox(currentTable.modelName, item.name);
+    });
+  });
 }
 
 let darkTheme = false;
@@ -115,10 +83,12 @@ app.post("/toggle-theme", (req, res) => {
 });
 
 app.get("/", (req, res) => {
-  updateCount();
-  updateDoneQues();
+  for (var i = 0; i < dsaTables.length; i++) {
+    updateDoneQues(dsaTables[i]);
+    updateCount(dsaTables[i]);
+  }
   const currentRoute = req.url;
-  res.render("index", {
+  res.render("index.ejs", {
     data: questions,
     _: _,
     currentRoute,
@@ -128,16 +98,15 @@ app.get("/", (req, res) => {
 
 app.get("/about", async (req, res) => {
   const currentRoute = req.url;
-  res.render("about", { currentRoute, darkTheme });
+  res.render("about.ejs", { currentRoute, darkTheme });
 });
 
 app.get("/:topic", async (req, res) => {
-  updateDoneQues();
   const requestedDs = _.lowerCase(req.params.topic);
   const currentRoute = "/";
   questions.forEach(function (item) {
     if (_.lowerCase(item.topicName) == requestedDs)
-      res.render("sheet", {
+      res.render("sheet.ejs", {
         dataStructure: item,
         currentRoute,
         darkTheme,
@@ -146,40 +115,41 @@ app.get("/:topic", async (req, res) => {
 });
 
 app.post("/updatedSheet", (req, res) => {
-  updateCount();
   let selectedQuesObj;
   if (req.body.checkedQues) selectedQuesObj = JSON.parse(req.body.checkedQues);
   else selectedQuesObj = JSON.parse(req.body.uncheckedQues);
+
   for (var i = 0; i < dsaTables.length; i++) {
     const currentTable = dsaTables[i];
     if (
       `${currentTable.modelName}` ===
-      _.camelCase(_.lowerCase(selectedQuesObj.topic))
+      _.camelCase(_.lowerCase(selectedQuesObj.item.Topic))
     ) {
-      const tableEntry = new currentTable({
-        name: selectedQuesObj.name,
-        link1: selectedQuesObj.link1,
-        link2: selectedQuesObj.link2,
-      });
       currentTable
-        .findOne({ name: selectedQuesObj.name })
+        .findOne({ name: selectedQuesObj.item.Problem })
         .then(function (foundQuestion) {
           if (!foundQuestion) {
-            tableEntry.save();
+            const tableEntry = new currentTable({
+              name: selectedQuesObj.item.Problem,
+              link1: selectedQuesObj.item.URL,
+              link2: selectedQuesObj.item.URL2,
+            });
+            tableEntry.save().then(function () {
+              updateDoneQues(currentTable);
+            });
           } else {
             currentTable
-              .deleteOne({ name: selectedQuesObj.name })
+              .deleteOne({ name: selectedQuesObj.item.Problem })
               .then(function () {
                 resetCheckbox(
-                  _.lowerCase(selectedQuesObj.topic),
-                  selectedQuesObj.name
+                  selectedQuesObj.item.Topic,
+                  selectedQuesObj.item.Problem
                 );
               });
           }
         });
     }
-    updateCount();
-    updateDoneQues();
+    updateDoneQues(currentTable);
   }
   res.status(204).send();
 });
