@@ -31,6 +31,7 @@ const compQueSchema = {
   name: String,
   link1: String,
   link2: String,
+  
 };
 
 const dsaTables = [];
