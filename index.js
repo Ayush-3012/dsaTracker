@@ -12,8 +12,7 @@ const port = 3000;
 
 app.set("view engine", "ejs");
 app.set("views", __dirname + "/views");
-// app.use("/public", express.static(__dirname, "public"));
-app.use(express.static(join(__dirname, "public")));
+app.use(express.static("public"));
 app.use(bodyParser.urlencoded({ extended: true }));
 
 async function run() {
